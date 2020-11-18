@@ -11,7 +11,7 @@
     <a class="header__logo" href="index.html">
       <img src="https://via.placeholder.com/150x150" alt="Логотип магазина кормов для кошек">
     </a>
-    <nav class="header__nav">
+    <nav class="header-nav">
       <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="header-nav__wrapper">
         <ul class="header-nav__list">
@@ -28,7 +28,7 @@
       </div>
     </nav>
   </header>
-  <main class="page__main">
+  <main class="main">
     <section class="promo">
       <div class="promo__wrapper">
         <h1 class="promo__title">Функциональное питание для котов</h1>
@@ -39,7 +39,7 @@
     </section>
     <section class="review">
       <div class="review__wrapper">
-        <div class="review__inner">
+        <div class="review__item">
           <h3 class="review__title">похудение</h3>
           <p class="review__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
             на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -89,20 +89,20 @@
           часов в день. </p>
         <span class="compare__span">5 КГ<small>снижение веса</small></span>
         <span class="compare__span">60 ДНЕЙ<small>затрачено времени</small></span>
-        <div class="compare__sliders">
-          <div class="comprare__slider">
+        <div class="compare__slider">
+          <div class="comprare__slide">
             <img src="https://via.placeholder.com/150x150" alt="фото толстого кота">
-            <span class="comprare__slider--after">было</span>
-            <span class="comprare__slider--before">стало</span>
+            <span class="comprare__text compare__text--before">было</span>
+            <span class="comprare__text compare__text--after">стало</span>
           </div>
-          <div class="comprare__slider">
+          <div class="comprare__slide">
             <img src="https://via.placeholder.com/150x150" alt="фото худого кота">
-            <span class="comprare__slider--after">было</span>
-            <span class="comprare__slider--before">стало</span>
+            <span class="comprare__text compare__text--before">было</span>
+            <span class="comprare__text compare__text--after">стало</span>
           </div>
           <div class="slider-button__inner">
-            <button class="slider-button" type="button">Предидущее фото</button>
-            <button class="slider-button" type="button">Следующее фото</button>
+            <button class="slider-buttons__button" type="button">Предидущее фото</button>
+            <button class="slider-buttons__button" type="button">Следующее фото</button>
           </div>
         </div>
       </div>
@@ -110,39 +110,37 @@
     <section class="contacts">
       <div class="contact__wrapper">
         <h4 class="contact__title">приглашаем к сотрудничеству дилеров!</h4>
-        <p class="contact__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <img src="https://via.placeholder.com/150x150" alt="карта проезда к магазину кормов Cat Energy">
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer">
-        <a class="footer__logo" href="index.html">Логотип магазина кормов для кошек</a>
-        <div class="footer__social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="" class="social__link social__link--vkontakte">
-                <img src="https://via.placeholder.com/150x150" alt="иконка В контакте">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--instagram">
-                <img src="https://via.placeholder.com/150x150" alt="иконка Инстаграм">
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--facebook">
-                <img src="https://via.placeholder.com/150x150" alt="иконка Facebook">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p class="footer__text">HTML Academy</p>
-        <a href="#" class="footer__link" aria-label="Логотип HTML Academy">
-          <img src="https://via.placeholder.com/150x150" alt="иконка HTML Academy">
-        </a>
+      <a class="footer__logo" href="index.html">Логотип магазина кормов для кошек</a>
+      <div class="footer__social">
+        <ul class="footer__social social__list">
+          <li class="footer__social social__item">
+            <a href="" class="footer__social social__link--vkontakte">
+              <img src="https://via.placeholder.com/150x150" alt="иконка В контакте">
+            </a>
+          </li>
+          <li class="footer__social social__item">
+            <a href="" class="footer__social social__link--instagram">
+              <img src="https://via.placeholder.com/150x150" alt="иконка Инстаграм">
+            </a>
+          </li>
+          <li class="footer__social social__item">
+            <a href="" class="footer__social social__link--facebook">
+              <img src="https://via.placeholder.com/150x150" alt="иконка Facebook">
+            </a>
+          </li>
+        </ul>
       </div>
+      <p class="footer__text">HTML Academy</p>
+      <a href="#" class="footer__link" aria-label="Логотип HTML Academy">
+        <img src="https://via.placeholder.com/150x150" alt="иконка HTML Academy">
+      </a>
     </div>
   </footer>
 </body>
