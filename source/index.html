@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
@@ -16,7 +17,7 @@
       <div class="header-nav__wrapper">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link--active">главная</a>
+            <a class="header-nav__link">главная</a>
           </li>
           <li class="header-nav__item">
             <a href="catalog.html" class="header-nav__link">каталог продукции</a>
@@ -45,7 +46,7 @@
             на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="#" class="review__link">каталог slim</a>
         </div>
-        <div class="review__inner">
+        <div class="review__item">
           <h3 class="review__title">Набор массы</h3>
           <p class="review__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые мышцы!</p>
@@ -87,18 +88,25 @@
         <p class="compare__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
           часов в день. </p>
-        <span class="compare__span">5 КГ<small>снижение веса</small></span>
-        <span class="compare__span">60 ДНЕЙ<small>затрачено времени</small></span>
+        <div class="compare-inner">
+          <p class="compare-inner__text">5 КГ</p>
+          <span class="compare-inner__span">снижение веса</span>
+        </div>
+        <div class="compare-inner">
+          <p class="compare-inner__text">60 ДНЕЙ</p>
+          <span class="compare-inner__span">затрачено времени</span>
+        </div>
         <div class="compare__slider">
+          <p class="compare__slider slider__text">Затраты на питание: 15 000 РУБ.</p>
           <div class="comprare__slide">
             <img src="https://via.placeholder.com/150x150" alt="фото толстого кота">
-            <span class="comprare__text compare__text--before">было</span>
-            <span class="comprare__text compare__text--after">стало</span>
+            <span class="comprare__span compare__span--before">было</span>
+            <span class="comprare__span compare__span--after">стало</span>
           </div>
           <div class="comprare__slide">
             <img src="https://via.placeholder.com/150x150" alt="фото худого кота">
-            <span class="comprare__text compare__text--before">было</span>
-            <span class="comprare__text compare__text--after">стало</span>
+            <span class="comprare__span compare__span--before">было</span>
+            <span class="comprare__span compare__span--after">стало</span>
           </div>
           <div class="slider-button__inner">
             <button class="slider-buttons__button" type="button">Предидущее фото</button>
@@ -111,7 +119,8 @@
       <div class="contact__wrapper">
         <h4 class="contact__title">приглашаем к сотрудничеству дилеров!</h4>
         <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img src="https://via.placeholder.com/150x150" alt="карта проезда к магазину кормов Cat Energy">
+        <img class="contact__images" src="https://via.placeholder.com/150x150"
+          alt="карта проезда к магазину кормов Cat Energy">
       </div>
     </section>
   </main>
