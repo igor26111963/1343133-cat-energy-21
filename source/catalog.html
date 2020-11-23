@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
@@ -16,7 +17,7 @@
       <div class="header-nav__wrapper">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a href="index.html" class="header-nav__link--active">главная</a>
+            <a href="index.html" class="header-nav__link header-nav__link--active">главная</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__link">каталог продукции</a>
@@ -42,7 +43,7 @@
                   <td class="catalog-top__item">Масса</td>
                   <td class="catalog-top__item">500 г</td>
                 </tr>
-                <tr class="catalog-top__line">footer__social
+                <tr class="catalog-top__line">
                   <td class="catalog-top__item">Вкус</td>
                   <td class="catalog-top__item">Курица</td>
                 </tr>
@@ -170,7 +171,7 @@
           </ul>
         </div>
         <div class="catalog-bottom">
-          <button class="catalog-bottom__button"><span class="visually-hidden">Отрыть каталог</span></button>
+          <a href="#" class="catalog-bottom__link"><span class="visually-hidden">Отрыть каталог</span></a>
           <h3 class="catalog-bottom__title">Показать еще 100500 товаров</h3>
           <p class="catalog-bottom__text">На самом деле вкусов гораздо больше!</p>
           <button class="catalog-bottom__button" type="button">показать все</button>
@@ -222,17 +223,18 @@
             <button class="addition__button" type="button">Заказать</button>
           </li>
         </ul>
-      </div>
-      <div class="addition-promo">
-        <img src="https://via.placeholder.com/150x150" alt="Корзина для покупок">
-        <p class="addition-promo__text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="addition-promo">
+          <img src="https://via.placeholder.com/150x150" alt="Корзина для покупок">
+          <p class="addition-promo__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="contacts">
-      <div class="contact__wrapper">
-        <h4 class="contact__title">приглашаем к сотрудничеству дилеров!</h4>
-        <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img src="https://via.placeholder.com/150x150" alt="карта проезда к магазину кормов Cat Energy">
+      <div class="contacts__wrapper">
+        <h4 class="contacts__title">приглашаем к сотрудничеству дилеров!</h4>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__images" src="https://via.placeholder.com/150x150"
+          alt="карта проезда к магазину кормов Cat Energy">
       </div>
     </section>
   </main>
