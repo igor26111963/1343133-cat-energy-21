@@ -2,10 +2,16 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: @white;
+  text-transform: uppercase;
   text-align: center;
   background-image: url(../../img/index-background.png);
   background-repeat: no-repeat;
   background-color: @basic-green;
+}
+.promo__wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .promo__title{
   font-weight: 500;
@@ -20,12 +26,39 @@
   font-size: 14px;
   line-height: 14px;
 }
+.promo__image{
+  order: 0;
+}
 .promo__link{
+  width: 200px;
   display: block;
-  margin: 0 20px;
+  margin: 0 auto;
   padding: 8px 44px;
   font-size: 14px;
   line-height: 18px;
   color: @white;
   background-color: @basic-green;
+}
+@media (min-width: @tablet-width){
+
+  .promo{
+    background-image: none;
+    background-color: @white;
+    color: @black;
+  }
+  .promo__image{
+    order: 1;
+  }
+
+  .promo__link{
+    width: 160px;
+  }
+
+}
+@media (min-width: @desktop-width){
+
+  .promo__wrapper{
+height: 250px;
+  }
+
 }

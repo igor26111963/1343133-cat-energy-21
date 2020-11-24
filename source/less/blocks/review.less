@@ -30,3 +30,38 @@
   color: @black;
   text-transform: uppercase;
 }
+@media (min-width: @tablet-width){
+
+  .review__title{
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .review__text{
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+  }
+
+  .review__link{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+@media (min-width: @desktop-width){
+
+  .review__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review__item{
+    width: 510px;
+  }
+
+  .review__item + .review__item{
+    margin-left: 20px;
+  }
+
+}
