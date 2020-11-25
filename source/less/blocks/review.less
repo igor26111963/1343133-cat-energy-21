@@ -1,13 +1,15 @@
-.review{
+.review {
   padding: 22px 20px 17px;
 }
-.review__item{
+
+.review__item {
   padding: 30px 20px 18px 33px;
   margin-bottom: 20px;
   text-align: left;
   background-color: @light-grey;
 }
-.review__title{
+
+.review__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -15,18 +17,53 @@
   color: @black;
   text-transform: uppercase;
 }
-.review__text{
+
+.review__text {
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @dark-grey;
 }
-.review__link{
+
+.review__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: @black;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .review__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .review__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+  }
+
+  .review__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review__item {
+    width: 510px;
+  }
+
+  .review__item + .review__item {
+    margin-left: 20px;
+  }
 }
