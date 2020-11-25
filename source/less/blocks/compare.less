@@ -2,10 +2,12 @@
   background-color: @special-grey;
   padding: 25px 20px;
 }
-.compare__wrapper{
+
+.compare__wrapper {
   display: flex;
   flex-wrap: wrap;
 }
+
 .compare__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -13,6 +15,7 @@
   line-height: 40px;
   color: @black;
 }
+
 .compare__text {
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
@@ -20,12 +23,14 @@
   line-height: 18px;
   color: @dark-grey;
 }
-.compare-inner{
+
+.compare-inner {
   max-width: 370px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .compare-inner__text {
   width: 124px;
   display: grid;
@@ -36,76 +41,78 @@
   text-align: center;
   color: @black;
 }
-.compare-inner__text:last-child{
+
+.compare-inner__text:last-child {
   margin-left: 30px;
 }
-.compare-inner__span{
+
+.compare-inner__span {
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: @dark-grey;
 }
-.compare__span{
+
+.compare__span {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: @black;
 }
-.compare__summary{
+
+.compare__summary {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: @black;
 }
+
 .compare__slider {
   text-align: center;
 }
 
-@media (min-width: @tablet-width){
-
-  .compare__title{
+@media (min-width: @tablet-width) {
+  .compare__title {
     font-size: 60px;
     line-height: 60px;
   }
 
-  .compare__text{
+  .compare__text {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .compare-inner__text{
+  .compare-inner__text {
     font-size: 30px;
     line-height: 37px;
   }
 
-  .compare-inner__text:last-child{
+  .compare-inner__text:last-child {
     margin-left: 41px;
   }
 
-  .compare-inner__span{
+  .compare-inner__span {
     font-size: 14px;
     line-height: 14px;
   }
 
-  .compare__summary{
+  .compare__summary {
     margin-left: 170px;
     font-size: 20px;
     line-height: 20px;
   }
-
 }
-@media (min-width: @desktop-width){
 
-  .compare__wrapper{
+@media (min-width: @desktop-width) {
+  .compare__wrapper {
     height: 656px;
     flex-direction: column;
   }
 
-  .compare__text{
+  .compare__text {
     width: 436px;
   }
-
 }

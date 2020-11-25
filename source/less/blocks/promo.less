@@ -1,35 +1,40 @@
-.promo{
+.promo {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: @white;
   text-transform: uppercase;
   text-align: center;
-  background-image: url(../../img/index-background.png);
+  background-image: url("../../img/index-background.png");
   background-repeat: no-repeat;
   background-color: @basic-green;
 }
-.promo__wrapper{
+
+.promo__wrapper {
   padding: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.promo-description__title{
+
+.promo-description__title {
   font-weight: 500;
   margin: 0;
   font-size: 36px;
   line-height: 36px;
 }
-.promo-description__text{
+
+.promo-description__text {
   margin: 0;
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
 }
-.promo__image{
+
+.promo__image {
   order: 0;
 }
-.promo__link{
+
+.promo__link {
   width: 200px;
   display: block;
   margin: 0 auto;
@@ -39,26 +44,25 @@
   color: @white;
   background-color: @basic-green;
 }
-@media (min-width: @tablet-width){
 
-  .promo{
+@media (min-width: @tablet-width) {
+  .promo {
     background-image: none;
     background-color: @white;
     color: @black;
   }
-  .promo__image{
+
+  .promo__image {
     order: 1;
   }
 
-  .promo__link{
+  .promo__link {
     width: 160px;
   }
-
 }
-@media (min-width: @desktop-width){
 
-  .promo__wrapper{
-height: 250px;
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    height: 250px;
   }
-
 }
