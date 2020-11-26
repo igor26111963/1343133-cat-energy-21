@@ -75,7 +75,7 @@
             </fieldset>
             <fieldset class="form-selection__item">
               <legend class="form-selection__title">Контактные данные (владельца кота)</legend>
-              <ul class="form-selection__list">
+              <ul class="form-selection__list--user">
                 <li class="form-selection__owner">
                   <label for="selection-mail">E-mail:*</label>
                   <input class="form-selection__mail-input" type="email" name="email" id="selection-mail"
@@ -124,8 +124,11 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h4 class="contacts__title">приглашаем к сотрудничеству дилеров!</h4>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts-description contacts__form">
+          <h4 class="contacts-description__title">приглашаем<br> к сотрудничеству<br> дилеров!</h4>
+          <p class="contacts-description__address">ул. Большая<br> Конюшенная, д. 19/8<br><span
+              class="contacts-description__span">Санкт-Петербург</span></p>
+        </div>
         <img class="contacts__images" src="https://via.placeholder.com/150x150"
           alt="карта проезда к магазину кормов Cat Energy">
       </div>
