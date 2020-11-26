@@ -30,8 +30,8 @@
     </nav>
   </header>
   <main class="main">
-    <div class="main__wrapper">
-      <section class="form">
+    <section class="form">
+      <div class="form__wrapper">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <form class="form-selection" action="https://echo.htmlacademy.ru" method="POST">
@@ -96,7 +96,7 @@
             </fieldset>
             <fieldset class="form-selection__item">
               <legend class="form-selection__title">Дополнительно</legend>
-              <ul class="form-selection__list">
+              <ul class="form-selection__list--checkbox">
                 <li class="form-selection__checkbox">
                   <input class="form-selection__checkbox-input" type="checkbox" name="sweetener" id="checkbox-sweetener"
                     checked>
@@ -117,19 +117,19 @@
               </ul>
             </fieldset>
             <button class="form-selection__button" type="submit">отправить заявку</button>
+            <span class="form__span">* — Обязательные поля</span>
           </div>
         </form>
-        <span class="form__span">* — Обязательные поля</span>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h4 class="contacts__title">приглашаем к сотрудничеству дилеров!</h4>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img class="contacts__images" src="https://via.placeholder.com/150x150"
-            alt="карта проезда к магазину кормов Cat Energy">
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h4 class="contacts__title">приглашаем к сотрудничеству дилеров!</h4>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contacts__images" src="https://via.placeholder.com/150x150"
+          alt="карта проезда к магазину кормов Cat Energy">
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
