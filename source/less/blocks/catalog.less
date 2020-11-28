@@ -80,3 +80,41 @@
   color: @dark-grey;
   background-color: @light-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-top__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .addition__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .addition__button {
+    width: 632px;
+  }
+
+  .addition-promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .addition-promo__text {
+    width: 161px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-top__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .addition__button {
+    width: 244px;
+  }
+}
