@@ -49,7 +49,7 @@
   background-color: @basic-green;
 }
 
-.catalog-bottom__title {
+.catalog-top__title--show-more {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -59,7 +59,7 @@
   color: @special-black;
 }
 
-.catalog-bottom__text {
+.catalog-top__text {
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -68,7 +68,7 @@
   color: @dark-grey;
 }
 
-.catalog-bottom__button {
+.catalog-top__button--show-more {
   display: block;
   margin: 20px;
   padding: 8px 74px;
@@ -79,4 +79,57 @@
   text-transform: uppercase;
   color: @dark-grey;
   background-color: @light-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-top__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .addition__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .addition__button {
+    width: 632px;
+  }
+
+  .addition-promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .addition-promo__text {
+    width: 161px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-top__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .addition__list {
+    width: 900px;
+  }
+
+  .addition__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .addition-promo {
+    width: 245px;
+    display: grid;
+  }
+
+  .addition__button {
+    width: 244px;
+  }
 }
