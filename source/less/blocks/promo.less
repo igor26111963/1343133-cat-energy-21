@@ -1,8 +1,10 @@
 .promo {
-  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: @white;
+  background-image: url("https://via.placeholder.com/320x302");
+  background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
 .promo__wrapper {
@@ -31,25 +33,15 @@
 }
 
 .promo__image {
-  order: 0;
-
-  &--background {
-    width: 320px;
-    height: 302px;
-    position: absolute;
-    z-index: -1;
-    transform: translateY(-167px);
-  }
-
-  &--box {
-    transform: translate(25px, -20px);
-  }
+  margin-left: 25px;
+  margin-top: -20px;
 }
 
 .promo__link {
+  order: 1;
   width: 200px;
   margin-left: 21px;
-  margin-top: -13px;
+  margin-top: 8px;
   padding: 17px 20px 17px 24px;
   font-size: 20px;
   line-height: 20px;
@@ -62,6 +54,8 @@
 @media (min-width: @tablet-width) {
   .promo {
     color: @black;
+    background-image: none;
+    margin-bottom: 52px;
   }
 
   .promo-description {
@@ -78,28 +72,37 @@
   .promo-description__text {
     font-size: 20px;
     line-height: 20px;
-    margin: 39px 32px 20px 32px;
+    margin: 39px 32px 20px 31px;
   }
 
-  .promo__image--background {
-    display: none;
-  }
-
-  .promo__image--box {
-    margin-left: 150px;
+  .promo__image {
     width: 529px;
     height: 609px;
+    margin-left: 175px;
+    margin-top: -95px;
   }
 
   .promo__link {
+    z-index: 1;
+    order: 0;
     padding: 17px 19px 17px 26px;
-    transform: translate(91px, -571px);
+    margin-top: 30px;
+    margin-left: 112px;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .promo {
+    z-index: 0;
+    padding-top: 500px;
+    background-image: url("https://via.placeholder.com/720x694");
+    background-size: 720px 694px;
+    background-position: 720px -168px;;
+    margin-top: -500px;
+  }
+
   .promo__wrapper {
     height: 550px;
     margin-left: 110px;
@@ -116,23 +119,14 @@
 
   .promo__image {
     order: 1;
-
-    &--background {
-      display: block;
-      z-index: -1;
-      width: 720px;
-      height: 694px;
-      transform: translate(-51px, -167px);
-    }
-
-    &--box {
-      margin-left: 0;
-      transform: translate(-140px, -60px);
-    }
+    width: 552px;
+    height: 499px;
+    margin-top: -50px;
+    margin-left: -300px;
   }
 
   .promo__link {
-    margin-top: 0;
-    transform: translate(60px, 32px);
+    margin-top: 34px;
+    margin-left: 80px;
   }
 }
