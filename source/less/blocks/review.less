@@ -1,9 +1,10 @@
-.review__wrapper {
-  margin: 8px 20px 27px;
+.review {
+  margin: 8px 0 27px;
 }
 
 .review__item {
-  padding: 20px 20px 7px;
+  margin: 0 20px;
+  padding: 20px 20px 8px;
   text-align: left;
   background-color: @light-grey;
 }
@@ -28,10 +29,13 @@
   font-size: 14px;
   line-height: 18px;
   color: @dark-grey;
-  margin-bottom: 42px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @border-dark-grey;
 }
 
 .review__link {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -43,12 +47,12 @@
 
 @media (min-width: @tablet-width) {
   .review__wrapper {
-    margin: -45px 30px 0;
+    padding: 0 30px;
   }
 
-  .review__item {
-    padding: 67px 52px 56px;
-  }
+  // .review__item {
+
+  // }
 
   .review__item + .review__item {
     margin-top: 30px;
@@ -81,8 +85,8 @@
 
 @media (min-width: @desktop-width) {
   .review__wrapper {
-    width: 100%;
-    margin: 58px 110px 75px;
+    padding: 0 110px;
+    margin: 58px 0 75px;
     display: flex;
     flex-wrap: wrap;
   }

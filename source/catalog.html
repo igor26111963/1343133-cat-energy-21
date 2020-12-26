@@ -10,29 +10,33 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип магазина кормов для кошек">
-    </a>
-    <nav class="header-nav">
-      <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="header-nav__wrapper">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="index.html" class="header-nav__link header-nav__link--active">главная</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link">каталог продукции</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="form.html" class="header-nav__link">подбор программы</a>
-          </li>
-        </ul>
+    <div class="header__wrapper wrapper">
+      <div class="header-logo">
+        <a class="header-logo__link" href="index.html">
+          <img src="https://via.placeholder.com/174x52" alt="Логотип магазина кормов для кошек">
+        </a>
       </div>
-    </nav>
+      <nav class="header-nav header-nav--closed header-nav--nojs">
+        <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="header-nav__wrapper">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--active">главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="catalog.html" class="header-nav__link">каталог продукции</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="form.html" class="header-nav__link">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <section class="catalog">
-      <div class="catalog__wrapper">
+      <div class="catalog__wrapper wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
         <div class="catalog-top__inner">
           <ul class="catalog-top__list">
@@ -180,7 +184,7 @@
       </div>
     </section>
     <section class="addition">
-      <div class="addition__wrapper">
+      <div class="addition__wrapper wrapper">
         <h2 class="addition__title">Дополнительные товары</h2>
         <div class="addition__inner">
           <ul class="addition__list">
@@ -233,7 +237,7 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper wrapper">
         <div class="contacts-description">
           <h4 class="contacts-description__title">приглашаем<br> к сотрудничеству<br> дилеров!</h4>
           <p class="contacts-description__address">ул. Большая<br> Конюшенная, д. 19/8<br><span
@@ -245,23 +249,24 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
-      <a class="footer__logo" href="index.html">Логотип магазина кормов для кошек</a>
+    <div class="footer__wrapper wrapper">
+      <a class="footer__logo" href="index.html">
+        <img src="https://via.placeholder.com/128x24" alt="Логотип магазина кормов для кошек"> </a>
       <div class="footer__social">
         <ul class="footer__social social__list">
           <li class="footer__social social__item">
             <a href="#" class="footer__social social__link--vkontakte">
-              <img src="https://via.placeholder.com/150x150" alt="иконка В контакте">
+              <img src="https://via.placeholder.com/28x22" alt="иконка В контакте">
             </a>
           </li>
           <li class="footer__social social__item">
             <a href="#" class="footer__social social__link--instagram">
-              <img src="https://via.placeholder.com/150x150" alt="иконка Инстаграм">
+              <img src="https://via.placeholder.com/20x20" alt="иконка Инстаграм">
             </a>
           </li>
           <li class="footer__social social__item">
             <a href="#" class="footer__social social__link--facebook">
-              <img src="https://via.placeholder.com/150x150" alt="иконка Facebook">
+              <img src="https://via.placeholder.com/22x22" alt="иконка Facebook">
             </a>
           </li>
         </ul>
@@ -269,7 +274,7 @@
       <div class="footer-copyright">
         <p class="footer-copyright__text">HTML Academy</p>
         <a href="#" class="footer-copyright__link" aria-label="Логотип HTML Academy">
-          <img src="https://via.placeholder.com/150x150" alt="иконка HTML Academy">
+          <img src="https://via.placeholder.com/27x34" alt="иконка HTML Academy">
         </a>
       </div>
     </div>
