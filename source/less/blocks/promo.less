@@ -2,67 +2,145 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: @white;
-  text-transform: uppercase;
-  text-align: center;
-  background-image: url("../../img/index-background.png");
+  background-image: url("https://via.placeholder.com/320x302");
   background-repeat: no-repeat;
-  background-color: @basic-green;
+  background-origin: content-box;
 }
 
 .promo__wrapper {
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
+.promo-description {
+  text-align: center;
+}
+
 .promo-description__title {
-  font-weight: 500;
-  margin: 0;
+  font-weight: 400;
+  margin: 26px 0 0;
   font-size: 36px;
   line-height: 36px;
 }
 
 .promo-description__text {
-  margin: 0;
+  margin: 25px 9px 0 0;
   margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
 }
 
-.promo__image {
-  order: 0;
+.promo__images {
+  margin-top: -20px;
 }
 
 .promo__link {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-  padding: 8px 44px;
+  order: 1;
+  margin-top: 10px;
+  padding: 7px 44px;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
   color: @white;
   background-color: @basic-green;
 }
 
 @media (min-width: @tablet-width) {
   .promo {
-    background-image: none;
-    background-color: @white;
     color: @black;
+    margin-bottom: 20px;
+    background-image: none;
+  }
+
+  .promo__wrapper {
+    padding: 0 30px;
+  }
+
+  .promo-description {
+    text-align: left;
+    padding-left: 94px;
+  }
+
+  .promo-description__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 50px 0 20px;
+  }
+
+  .promo-description__text {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 39px 0 20px;
+  }
+
+  .promo__images {
+    width: 529px;
+    height: 609px;
+    margin-left: 145px;
+    margin-top: -105px;
   }
 
   .promo__image {
-    order: 1;
+    width: 529px;
+    height: 609px;
   }
 
   .promo__link {
-    width: 160px;
+    z-index: 1;
+    order: 0;
+    width: 244px;
+    padding: 17px 60px;
+    margin-top: 30px;
+    margin-left: 88px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .promo {
+    z-index: 0;
+    padding-top: 500px;
+    background-image: url("https://via.placeholder.com/720x694");
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    background-position: 710px -130px;
+    margin-top: -454px;
+  }
+
   .promo__wrapper {
-    height: 250px;
+    height: 550px;
+    padding: 0 110px;
+  }
+
+  .promo-description {
+    padding-left: 40px;
+  }
+
+  .promo-description__title {
+    margin-top: 54px;
+  }
+
+  .promo__images {
+    order: 1;
+    width: 552px;
+    height: 499px;
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+
+  .promo__image {
+    width: 552px;
+    height: 499px;
+  }
+
+  .promo__link {
+    padding: 17px 60px;
+    margin-top: 34px;
+    margin-left: 40px;
   }
 }

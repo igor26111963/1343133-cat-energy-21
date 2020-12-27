@@ -3,181 +3,188 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип магазина кормов для кошек">
-    </a>
-    <nav class="header-nav">
-      <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="header-nav__wrapper">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="index.html" class="header-nav__link header-nav__link--active">главная</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link">каталог продукции</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="form.html" class="header-nav__link">подбор программы</a>
-          </li>
-        </ul>
+    <div class="header__wrapper wrapper">
+      <div class="header-logo">
+        <a class="header-logo__link" href="index.html">
+          <img src="https://via.placeholder.com/174x52" alt="Логотип магазина кормов для кошек">
+        </a>
       </div>
-    </nav>
+      <nav class="header-nav header-nav--closed header-nav--nojs">
+        <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="header-nav__wrapper">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--active">главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="catalog.html" class="header-nav__link">каталог продукции</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="form.html" class="header-nav__link">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <section class="catalog">
-      <div class="catalog__inner">
+      <div class="catalog__wrapper wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
-        <ul class="catalog-top__list">
-          <li class="catalog-top__items">
-            <h3 class="catalog-top__title">Cat Energy PRO 500 г</h3>
-            <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
-            <table class="catalog-top__table">
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Масса</td>
-                <td class="catalog-top__item">500 г</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Вкус</td>
-                <td class="catalog-top__item">Курица</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Цена</td>
-                <td class="catalog-top__item">700 Р.</td>
-              </tr>
-            </table>
-            <button class="catalog-top__button" type="button">Заказать</button>
-          </li>
-          <li class="catalog-top__items">
-            <h3 class="catalog-top__title">Cat Energy PRO 1000 г</h3>
-            <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
-            <table class="catalog-top__table">
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Масса</td>
-                <td class="catalog-top__item">1000 г</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Вкус</td>
-                <td class="catalog-top__item">Курица</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Цена</td>
-                <td class="catalog-top__item">1000 Р.</td>
-              </tr>
-            </table>
-            <button class="catalog-top__button" type="button">Заказать</button>
-          </li>
-          <li class="catalog-top__items">
-            <h3 class="catalog-top__title">Cat Energy PRO 500 г</h3>
-            <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
-            <table class="catalog-top__table">
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Масса</td>
-                <td class="catalog-top__item">500 г</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Вкус</td>
-                <td class="catalog-top__item">Рыба</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Цена</td>
-                <td class="catalog-top__item">700 Р.</td>
-              </tr>
-            </table>
-            <button class="catalog-top__button" type="button">Заказать</button>
-          </li>
-          <li class="catalog-top__items">
-            <h3 class="catalog-top__title">Cat Energy PRO 1000 г</h3>
-            <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
-            <table class="catalog-top__table">
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Масса</td>
-                <td class="catalog-top__item">1000 г</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Вкус</td>
-                <td class="catalog-top__item">Рыба</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Цена</td>
-                <td class="catalog-top__item">1000 Р.</td>
-              </tr>
-            </table>
-            <button class="catalog-top__button" type="button">Заказать</button>
-          </li>
-          <li class="catalog-top__items">
-            <h3 class="catalog-top__title">Cat Energy PRO 500 г</h3>
-            <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
-            <table class="catalog-top__table">
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Масса</td>
-                <td class="catalog-top__item">500 г</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Вкус</td>
-                <td class="catalog-top__item">Гречка</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Цена</td>
-                <td class="catalog-top__item">400 Р.</td>
-              </tr>
-            </table>
-            <button class="catalog-top__button" type="button">Заказать</button>
-          </li>
-          <li class="catalog-top__items">
-            <h3 class="catalog-top__title">Cat Energy PRO 1000 г</h3>
-            <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
-            <table class="catalog-top__table">
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Масса</td>
-                <td class="catalog-top__item">1000 г</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Вкус</td>
-                <td class="catalog-top__item">Гречка</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Цена</td>
-                <td class="catalog-top__item">700 Р.</td>
-              </tr>
-            </table>
-            <button class="catalog-top__button" type="button">Заказать</button>
-          </li>
-          <li class="catalog-top__items">
-            <h3 class="catalog-top__title">Cat Energy PRO 500 г</h3>
-            <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
-            <table class="catalog-top__table">
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Масса</td>
-                <td class="catalog-top__item">500 г</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Вкус</td>
-                <td class="catalog-top__item">Рис</td>
-              </tr>
-              <tr class="catalog-top__line">
-                <td class="catalog-top__item">Цена</td>
-                <td class="catalog-top__item">500 Р.</td>
-              </tr>
-            </table>
-            <button class="catalog-top__button" type="button">Заказать</button>
-          </li>
-          <li class="catalog-top__items">
-            <a href="#" class="catalog-top__link"><span class="visually-hidden">Отрыть каталог</span></a>
-            <h3 class="catalog-top__title--show-more">Показать еще 100500 товаров</h3>
-            <p class="catalog-top__text">На самом деле вкусов гораздо больше!</p>
-            <button class="catalog-top__button--show-more" type="button">показать все</button>
-          </li>
-        </ul>
+        <div class="catalog-top__inner">
+          <ul class="catalog-top__list">
+            <li class="catalog-top__items">
+              <h3 class="catalog-top__title">Cat Energy PRO 500 г</h3>
+              <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
+              <table class="catalog-top__table">
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Масса</td>
+                  <td class="catalog-top__item">500 г</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Вкус</td>
+                  <td class="catalog-top__item">Курица</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Цена</td>
+                  <td class="catalog-top__item">700 Р.</td>
+                </tr>
+              </table>
+              <button class="catalog-top__button" type="button">Заказать</button>
+            </li>
+            <li class="catalog-top__items">
+              <h3 class="catalog-top__title">Cat Energy PRO 1000 г</h3>
+              <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
+              <table class="catalog-top__table">
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Масса</td>
+                  <td class="catalog-top__item">1000 г</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Вкус</td>
+                  <td class="catalog-top__item">Курица</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Цена</td>
+                  <td class="catalog-top__item">1000 Р.</td>
+                </tr>
+              </table>
+              <button class="catalog-top__button" type="button">Заказать</button>
+            </li>
+            <li class="catalog-top__items">
+              <h3 class="catalog-top__title">Cat Energy PRO 500 г</h3>
+              <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
+              <table class="catalog-top__table">
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Масса</td>
+                  <td class="catalog-top__item">500 г</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Вкус</td>
+                  <td class="catalog-top__item">Рыба</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Цена</td>
+                  <td class="catalog-top__item">700 Р.</td>
+                </tr>
+              </table>
+              <button class="catalog-top__button" type="button">Заказать</button>
+            </li>
+            <li class="catalog-top__items">
+              <h3 class="catalog-top__title">Cat Energy PRO 1000 г</h3>
+              <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
+              <table class="catalog-top__table">
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Масса</td>
+                  <td class="catalog-top__item">1000 г</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Вкус</td>
+                  <td class="catalog-top__item">Рыба</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Цена</td>
+                  <td class="catalog-top__item">1000 Р.</td>
+                </tr>
+              </table>
+              <button class="catalog-top__button" type="button">Заказать</button>
+            </li>
+            <li class="catalog-top__items">
+              <h3 class="catalog-top__title">Cat Energy PRO 500 г</h3>
+              <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
+              <table class="catalog-top__table">
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Масса</td>
+                  <td class="catalog-top__item">500 г</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Вкус</td>
+                  <td class="catalog-top__item">Гречка</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Цена</td>
+                  <td class="catalog-top__item">400 Р.</td>
+                </tr>
+              </table>
+              <button class="catalog-top__button" type="button">Заказать</button>
+            </li>
+            <li class="catalog-top__items">
+              <h3 class="catalog-top__title">Cat Energy PRO 1000 г</h3>
+              <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
+              <table class="catalog-top__table">
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Масса</td>
+                  <td class="catalog-top__item">1000 г</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Вкус</td>
+                  <td class="catalog-top__item">Гречка</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Цена</td>
+                  <td class="catalog-top__item">700 Р.</td>
+                </tr>
+              </table>
+              <button class="catalog-top__button" type="button">Заказать</button>
+            </li>
+            <li class="catalog-top__items">
+              <h3 class="catalog-top__title">Cat Energy PRO 500 г</h3>
+              <img src="https://via.placeholder.com/150x150" alt="Коробка корма для кошек Cat Energy">
+              <table class="catalog-top__table">
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Масса</td>
+                  <td class="catalog-top__item">500 г</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Вкус</td>
+                  <td class="catalog-top__item">Рис</td>
+                </tr>
+                <tr class="catalog-top__line">
+                  <td class="catalog-top__item">Цена</td>
+                  <td class="catalog-top__item">500 Р.</td>
+                </tr>
+              </table>
+              <button class="catalog-top__button" type="button">Заказать</button>
+            </li>
+            <li class="catalog-top__items">
+              <a href="#" class="catalog-top__link"><span class="visually-hidden">Отрыть каталог</span></a>
+              <h3 class="catalog-top__title--show-more">Показать еще 100500 товаров</h3>
+              <p class="catalog-top__text">На самом деле вкусов гораздо больше!</p>
+              <button class="catalog-top__button--show-more" type="button">показать все</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="addition">
-      <div class="addition__wrapper">
+      <div class="addition__wrapper wrapper">
         <h2 class="addition__title">Дополнительные товары</h2>
         <div class="addition__inner">
           <ul class="addition__list">
@@ -230,7 +237,7 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper wrapper">
         <div class="contacts-description">
           <h4 class="contacts-description__title">приглашаем<br> к сотрудничеству<br> дилеров!</h4>
           <p class="contacts-description__address">ул. Большая<br> Конюшенная, д. 19/8<br><span
@@ -242,23 +249,24 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
-      <a class="footer__logo" href="index.html">Логотип магазина кормов для кошек</a>
+    <div class="footer__wrapper wrapper">
+      <a class="footer__logo" href="index.html">
+        <img src="https://via.placeholder.com/128x24" alt="Логотип магазина кормов для кошек"> </a>
       <div class="footer__social">
         <ul class="footer__social social__list">
           <li class="footer__social social__item">
             <a href="#" class="footer__social social__link--vkontakte">
-              <img src="https://via.placeholder.com/150x150" alt="иконка В контакте">
+              <img src="https://via.placeholder.com/28x22" alt="иконка В контакте">
             </a>
           </li>
           <li class="footer__social social__item">
             <a href="#" class="footer__social social__link--instagram">
-              <img src="https://via.placeholder.com/150x150" alt="иконка Инстаграм">
+              <img src="https://via.placeholder.com/20x20" alt="иконка Инстаграм">
             </a>
           </li>
           <li class="footer__social social__item">
             <a href="#" class="footer__social social__link--facebook">
-              <img src="https://via.placeholder.com/150x150" alt="иконка Facebook">
+              <img src="https://via.placeholder.com/22x22" alt="иконка Facebook">
             </a>
           </li>
         </ul>
@@ -266,7 +274,7 @@
       <div class="footer-copyright">
         <p class="footer-copyright__text">HTML Academy</p>
         <a href="#" class="footer-copyright__link" aria-label="Логотип HTML Academy">
-          <img src="https://via.placeholder.com/150x150" alt="иконка HTML Academy">
+          <img src="https://via.placeholder.com/27x34" alt="иконка HTML Academy">
         </a>
       </div>
     </div>
