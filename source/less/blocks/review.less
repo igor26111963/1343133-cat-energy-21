@@ -50,10 +50,6 @@
     padding: 0 30px;
   }
 
-  // .review__item {
-
-  // }
-
   .review__item + .review__item {
     margin-top: 30px;
   }
@@ -71,6 +67,7 @@
     line-height: 24px;
     color: @black;
     margin-bottom: 52px;
+    border-bottom: none;
 
     &--pro {
       width: 344px;
@@ -85,20 +82,16 @@
 
 @media (min-width: @desktop-width) {
   .review__wrapper {
-    padding: 0 110px;
+    width: 1220px;
     margin: 58px 0 75px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .review__item {
     padding: 37px 0 60px;
     width: 570px;
-  }
-
-  .review__item + .review__item {
-    margin-top: 0;
-    margin-left: 80px;
   }
 
   .review__title {
