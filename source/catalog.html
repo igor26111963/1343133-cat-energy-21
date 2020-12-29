@@ -10,29 +10,33 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип магазина кормов для кошек">
-    </a>
-    <nav class="header-nav">
-      <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="header-nav__wrapper">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="index.html" class="header-nav__link header-nav__link--active">главная</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link">каталог продукции</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="form.html" class="header-nav__link">подбор программы</a>
-          </li>
-        </ul>
+    <div class="header__wrapper wrapper">
+      <div class="header-logo">
+        <a class="header-logo__link" href="index.html">
+          <img src="https://via.placeholder.com/174x52" alt="Логотип магазина кормов для кошек">
+        </a>
+        <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
-    </nav>
+      <nav class="header-nav header-nav--closed header-nav--nojs">
+        <div class="header-nav__wrapper">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--index header-nav__link--active">главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="catalog.html" class="header-nav__link header-nav__link--index">каталог продукции</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="form.html" class="header-nav__link header-nav__link--index">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <section class="catalog">
-      <div class="catalog__wrapper">
+      <div class="catalog__wrapper wrapper">
         <h1 class="catalog__title">Каталог продукции</h1>
         <div class="catalog-top__inner">
           <ul class="catalog-top__list">
@@ -180,7 +184,7 @@
       </div>
     </section>
     <section class="addition">
-      <div class="addition__wrapper">
+      <div class="addition__wrapper wrapper">
         <h2 class="addition__title">Дополнительные товары</h2>
         <div class="addition__inner">
           <ul class="addition__list">
@@ -245,7 +249,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper wrapper">
       <a class="footer__logo" href="index.html">Логотип магазина кормов для кошек</a>
       <div class="footer__social">
         <ul class="footer__social social__list">

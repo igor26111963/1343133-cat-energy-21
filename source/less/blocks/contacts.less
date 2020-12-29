@@ -1,5 +1,9 @@
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .contacts-description {
-  margin: 10px 20px 7px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -27,8 +31,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    margin-top: 48px;
+    background-color: @light-grey;
+  }
+
   .contacts-description {
-    margin: 58px 70px;
+    margin: 0 57px 0 27px;
+    padding-top: 64px;
   }
 
   .contacts-description__title {
@@ -75,8 +85,8 @@
   .contacts-description {
     position: absolute;
     content: "";
-    top: 40px;
-    left: 40px;
+    top: 80px;
+    left: 70px;
     width: 570px;
     height: 200px;
     align-items: center;
