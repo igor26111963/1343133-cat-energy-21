@@ -1,9 +1,5 @@
-.wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .contacts-description {
+  margin-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -11,6 +7,7 @@
 
 .contacts-description__title {
   width: 138px;
+  margin: 21px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -22,7 +19,7 @@
 .contacts-description__address,
 .contacts-description__span {
   width: 137px;
-  padding-top: 4px;
+  padding-top: 6px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -30,15 +27,24 @@
   color: @dark-grey;
 }
 
+.contacts__images {
+  margin-left: -20px;
+}
+
 @media (min-width: @tablet-width) {
   .contacts {
-    margin-top: 48px;
+    // margin-top: 75px;
     background-color: @light-grey;
   }
 
+  .main-form .contacts {
+    margin-top: 75px;
+  }
+
   .contacts-description {
-    margin: 0 57px 0 27px;
-    padding-top: 64px;
+    margin: 0 40px 0 41px;
+    padding-top: 65px;
+    padding-bottom: 60px;
   }
 
   .contacts-description__title {
@@ -79,13 +85,17 @@
 @media (min-width: @desktop-width) {
   .contacts {
     position: relative;
+    margin-top: -198px;
+  }
+
+  .main-form .contacts {
     margin-top: -250px;
   }
 
   .contacts-description {
     position: absolute;
     content: "";
-    top: 80px;
+    top: 95px;
     left: 70px;
     width: 570px;
     height: 200px;

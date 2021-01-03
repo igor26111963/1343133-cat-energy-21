@@ -13,7 +13,7 @@
     <div class="header__wrapper wrapper">
       <div class="header-logo">
         <a class="header-logo__link" href="index.html">
-          <img src="https://via.placeholder.com/174x52" alt="Логотип магазина кормов для кошек">
+          <img src="https://via.placeholder.com/190x52" alt="Логотип магазина кормов для кошек">
         </a>
         <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -64,22 +64,23 @@
                 <li class="form-selection__radio">
                   <input class="form-selection__radio-input" name="form-radio" id="radio-slim" type="radio" value="slim"
                     checked>
-                  <label for="radio-slim">похудение</label>
+                  <label class="form-selection__radio-label" for="radio-slim">похудение</label>
                 </li>
                 <li class="form-selection__radio">
                   <input class="form-selection__radio-input" name="form-radio" id="radio-weight" type="radio"
                     value="weight">
-                  <label for="radio-weight">Набор массы</label>
+                  <label class="form-selection__radio-label" for="radio-weight">Набор массы</label>
                 </li>
                 <li class="form-selection__radio">
                   <input class="form-selection__radio-input" name="form-radio" id="radio-advice" type="radio"
                     value="advice">
-                  <label for="radio-advice">Не знаю (Нужен ваш совет)</label>
+                  <label class="form-selection__radio-label" for="radio-advice">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-selection__item">
-              <legend class="form-selection__title">Контактные данные (владельца кота)</legend>
+              <legend class="form-selection__title form-selection__title--user">Контактные данные (владельца кота)
+              </legend>
               <ul class="form-selection__list form-selection__list--user">
                 <li class="form-selection__owner">
                   <label for="selection-mail">E-mail:*</label>
@@ -94,30 +95,30 @@
               </ul>
             </fieldset>
             <fieldset class="form-selection__item">
-              <legend class="form-selection__title">Комментарий</legend>
+              <legend class="form-selection__title form-selection__title--comments">Комментарий</legend>
               <label for="selection-comments"></label>
-              <textarea class="form-selection__comment" name="comments" id="selection-comments" cols="44" rows="8"
+              <textarea class="form-selection__comment" name="comments" id="selection-comments"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form-selection__item">
-              <legend class="form-selection__title">Дополнительно</legend>
+              <legend class="form-selection__title form-selection__title--checkbox">Дополнительно</legend>
               <ul class="form-selection__list form-selection__list--checkbox">
                 <li class="form-selection__checkbox">
                   <input class="form-selection__checkbox-input" type="checkbox" name="sweetener" id="checkbox-sweetener"
                     checked>
-                  <label for="checkbox-sweetener">сахарозаменитель</label>
+                  <label class="form-selection__checkbox-label" for="checkbox-sweetener">сахарозаменитель</label>
                 </li>
                 <li class="form-selection__checkbox">
                   <input class="form-selection__checkbox-input" type="checkbox" name="water" id="checkbox-water">
-                  <label for="checkbox-water">питьевая вода</label>
+                  <label class="form-selection__checkbox-label" for="checkbox-water">питьевая вода</label>
                 </li>
                 <li class="form-selection__checkbox">
                   <input class="form-selection__checkbox-input" type="checkbox" id="checkbox-milk">
-                  <label for="checkbox-milk">молоко</label>
+                  <label class="form-selection__checkbox-label" for="checkbox-milk">молоко</label>
                 </li>
                 <li class="form-selection__checkbox">
                   <input class="form-selection__checkbox-input" type="checkbox" name="vitamins" id="checkbox-vitamins">
-                  <label for="checkbox-vitamins">витамины</label>
+                  <label class="form-selection__checkbox-label" for="checkbox-vitamins">витамины</label>
                 </li>
               </ul>
             </fieldset>
@@ -134,29 +135,30 @@
           <p class="contacts-description__address">ул. Большая<br> Конюшенная, д. 19/8<br><span
               class="contacts-description__span">Санкт-Петербург</span></p>
         </div>
-        <img class="contacts__images" src="https://via.placeholder.com/150x150"
+        <img class="contacts__images" src="https://via.placeholder.com/320x362"
           alt="карта проезда к магазину кормов Cat Energy">
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper wrapper">
-      <a class="footer__logo" href="index.html">Логотип магазина кормов для кошек</a>
-      <div class="footer__social">
-        <ul class="footer__social social__list">
-          <li class="footer__social social__item">
-            <a href="#" class="footer__social social__link--vkontakte">
-              <img src="https://via.placeholder.com/150x150" alt="иконка В контакте">
+      <a class="footer__logo" href="index.html">
+        <img src="https://via.placeholder.com/128x24" alt="Логотип магазина кормов для кошек"> </a>
+      <div class="footer-social">
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a href="#" class="social__link--vkontakte">
+              <img src="https://via.placeholder.com/28x22" alt="иконка В контакте">
             </a>
           </li>
-          <li class="footer__social social__item">
-            <a href="#" class="footer__social social__link--instagram">
-              <img src="https://via.placeholder.com/150x150" alt="иконка Инстаграм">
+          <li class="footer-social__item">
+            <a href="#" class="footer-social__link--instagram">
+              <img src="https://via.placeholder.com/20x20" alt="иконка Инстаграм">
             </a>
           </li>
-          <li class="footer__social social__item">
-            <a href="#" class="footer__social social__link--facebook">
-              <img src="https://via.placeholder.com/150x150" alt="иконка Facebook">
+          <li class="footer-social__item">
+            <a href="#" class="footer-social__link--facebook">
+              <img src="https://via.placeholder.com/22x22" alt="иконка Facebook">
             </a>
           </li>
         </ul>
@@ -164,7 +166,7 @@
       <div class="footer-copyright">
         <p class="footer-copyright__text">HTML Academy</p>
         <a href="#" class="footer-copyright__link" aria-label="Логотип HTML Academy">
-          <img src="https://via.placeholder.com/150x150" alt="иконка HTML Academy">
+          <img src="https://via.placeholder.com/27x34" alt="иконка HTML Academy">
         </a>
       </div>
     </div>
