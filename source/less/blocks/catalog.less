@@ -17,15 +17,22 @@
 .catalog-top__items {
   padding: 20px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-top__title {
+  width: 80px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: @dark;
+}
+
+.catalog-top__item {
+  width: 140px;
 }
 
 .catalog-top__line {
@@ -38,7 +45,8 @@
 
 .catalog-top__button {
   display: block;
-  margin: 20px;
+  width: 280px;
+  margin: 20px 0;
   padding: 8px 74px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
