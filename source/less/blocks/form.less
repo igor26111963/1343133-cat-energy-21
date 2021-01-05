@@ -295,7 +295,8 @@
   color: @black;
 }
 
-.form-border {
+.form-border::before {
+  content: "";
   display: inline-block;
   width: 100vw;
   height: 1px;
@@ -439,6 +440,11 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .form-selection__mail-input:invalid,
+  .form-selection__phone-input:invalid {
+    border: red;
   }
 
   .form-selection__mail-input {
