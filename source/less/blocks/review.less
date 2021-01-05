@@ -7,10 +7,10 @@
   padding: 20px 20px 18px;
   text-align: left;
   background-color: @light-grey;
-}
 
-.review__item + .review__item {
-  margin-top: 20px;
+  & + & {
+    margin-top: 20px;
+  }
 }
 
 .review__title {
@@ -31,6 +31,7 @@
   color: @dark-grey;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid @border-grey;
 }
 
 .review__link {
@@ -53,10 +54,10 @@
   .review__item {
     margin-top: -40px;
     padding: 70px 52px 56px;
-  }
 
-  .review__item + .review__item {
-    margin-top: 30px;
+    & + & {
+      margin-top: 30px;
+    }
   }
 
   .review__title {
@@ -98,11 +99,11 @@
     margin-top: 50px;
     padding: 37px 0 60px;
     width: 570px;
-  }
 
-  .review__item + .review__item {
-    margin-top: 50px;
-    margin-left: 80px;
+    & + & {
+      margin-top: 50px;
+      margin-left: 80px;
+    }
   }
 
   .review__title {

@@ -28,27 +28,27 @@
   font-size: 24px;
   line-height: 26px;
   color: @black;
-}
 
-.form-selection__title::before,
-.form-selection__title::after {
-  margin-right: 22px;
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 100%;
-  width: 100vw;
-  height: 2px;
-  background-color: @basic-green;
-}
+  &::before,
+  &::after {
+    margin-right: 22px;
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: @basic-green;
+  }
 
-.form-selection__title::after {
-  margin-left: 22px;
-  left: 100%;
-}
+  &::after {
+    margin-left: 22px;
+    left: 100%;
+  }
 
-.form-selection__title::before {
-  display: none;
+  &::before {
+    display: none;
+  }
 }
 
 .form-selection__list {
@@ -62,22 +62,22 @@
   padding: 0;
   padding-bottom: 6px;
   border: none;
-}
 
-.form-selection__items--radio {
-  padding-top: 28px;
-}
+  &--radio {
+    padding-top: 28px;
+  }
 
-.form-selection__items--data {
-  margin-top: 5px;
-}
+  &--data {
+    margin-top: 5px;
+  }
 
-.form-selection__items--comment {
-  margin-top: 16px;
-}
+  &--comment {
+    margin-top: 16px;
+  }
 
-.form-selection__items--checkbox {
-  margin-top: 15px;
+  &--checkbox {
+    margin-top: 15px;
+  }
 }
 
 .form-selection__item {
@@ -88,10 +88,10 @@
   text-transform: uppercase;
   color: @dark-grey;
   list-style: none;
-}
 
-.form-selection__item + .form-selection__item {
-  padding-top: 12px;
+  & + & {
+    padding-top: 12px;
+  }
 }
 
 .form-selection__text {
@@ -109,6 +109,10 @@
 
 .form-selection__radio {
   list-style: none;
+
+  & + & {
+    margin-top: 25px;
+  }
 }
 
 .form-selection__radio-input {
@@ -152,10 +156,6 @@
   height: 14px;
   background-color: @basic-green;
   border-radius: 50%;
-}
-
-.form-selection__radio + .form-selection__radio {
-  margin-top: 25px;
 }
 
 .form-selection__radio-input:disabled + .form-selection__radio-label {
@@ -213,6 +213,10 @@
   text-transform: uppercase;
   color: @black;
   list-style: none;
+
+  & + & {
+    margin-top: 15px;
+  }
 }
 
 .form-selection__checkbox-input {
@@ -257,10 +261,6 @@
   opacity: 0.3;
 }
 
-.form-selection__checkbox + .form-selection__checkbox {
-  margin-top: 15px;
-}
-
 .form-selection__button {
   margin-top: 22px;
   width: 280px;
@@ -274,14 +274,14 @@
   color: @white;
   background-color: @basic-green;
   border: none;
-}
 
-.form-selection__button:hover {
-  background-color: @special-green;
-}
+  &:hover {
+    background-color: @special-green;
+  }
 
-.form-selection__button:active {
-  color: @button-active;
+  &:active {
+    color: @button-active;
+  }
 }
 
 .form__span {
@@ -328,6 +328,14 @@
   .form-selection__items {
     padding-top: 10px;
     padding-bottom: 40px;
+
+    &--radio {
+      width: 630px;
+      border: 1px solid @border-grey;
+      padding-top: 0;
+      padding-bottom: 28px;
+      margin-top: 32px;
+    }
   }
 
   .form-selection__list {
@@ -336,18 +344,10 @@
 
   .form-selection__item {
     width: 630px;
-  }
 
-  .form-selection__item + .form-selection__item {
-    padding-top: 20px;
-  }
-
-  .form-selection__items--radio {
-    width: 630px;
-    border: 1px solid @border-grey;
-    padding-top: 0;
-    padding-bottom: 28px;
-    margin-top: 32px;
+    & + & {
+      padding-top: 20px;
+    }
   }
 
   .form-selection__radio-input + .form-selection__radio-label {
@@ -392,10 +392,10 @@
   .form-selection__radio {
     padding-top: 31px;
     padding-left: 16px;
-  }
 
-  .form-selection__radio + .form-selection__radio {
-    margin-top: -8px;
+    & + & {
+      margin-top: -8px;
+    }
   }
 
   .form-selection__radio--input {
@@ -409,26 +409,26 @@
   .form-selection__title {
     font-size: 36px;
     line-height: 36px;
-  }
 
-  .form-selection__title::before,
-  .form-selection__title::after {
-    margin-right: 40px;
-    top: 70%;
-  }
+    &::before,
+    &::after {
+      margin-right: 40px;
+      top: 70%;
+    }
 
-  .form-selection__title::after {
-    margin-left: 40px;
-    left: 100%;
-  }
+    &::after {
+      margin-left: 40px;
+      left: 100%;
+    }
 
-  .form-selection__title::before {
-    display: block;
-  }
+    &::before {
+      display: block;
+    }
 
-  .form-selection__title--user {
-    width: 512px;
-    padding-top: 22px;
+    &--user {
+      width: 512px;
+      padding-top: 22px;
+    }
   }
 
   .form-selection__mail-input,
@@ -440,11 +440,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .form-selection__mail-input:invalid,
-  .form-selection__phone-input:invalid {
-    border: red;
   }
 
   .form-selection__mail-input {
@@ -486,10 +481,11 @@
     margin-bottom: 32px;
     font-size: 20px;
     line-height: 30px;
-  }
 
-  .form-selection__checkbox + .form-selection__checkbox {
-    margin-top: 0;
+
+    & + & {
+      margin-top: 0;
+    }
   }
 
   .form-selection__checkbox-input + .form-selection__checkbox-label {
@@ -538,11 +534,11 @@
 
   .form-selection__wrapper {
     padding: 0;
-  }
 
-  .form-selection__wrapper--desctop {
-    width: 570px;
-    margin: 0;
+    &--desctop {
+      width: 570px;
+      margin: 0;
+    }
   }
 
   .form__title {
@@ -569,21 +565,30 @@
   .form-selection__items {
     max-width: 570px;
     padding: 0;
+
+    &--radio {
+      margin: 0;
+      padding-bottom: 27px;
+    }
+
+    &--data {
+      margin-top: 48px;
+      margin-bottom: 2px;
+    }
+
+    &--checkbox {
+      margin-top: 22px;
+      padding-bottom: 10px;
+    }
+
+    &--comment {
+      margin-top: 55px;
+    }
   }
 
   .form-selection__radio {
     width: 570px;
     padding-left: 15px;
-  }
-
-  .form-selection__items--radio {
-    margin: 0;
-    padding-bottom: 27px;
-  }
-
-  .form-selection__items--data {
-    margin-top: 48px;
-    margin-bottom: 2px;
   }
 
   .form-selection__list--user {
@@ -600,19 +605,10 @@
     padding: 9px 16px;
   }
 
-  .form-selection__items--checkbox {
-    margin-top: 22px;
-    padding-bottom: 10px;
-  }
-
   .form-selection__comment {
     width: 1220px;
     margin-top: 75px;
     margin-bottom: 44px;
-  }
-
-  .form-selection__items--comment {
-    margin-top: 55px;
   }
 
   .form-selection__list--user,
