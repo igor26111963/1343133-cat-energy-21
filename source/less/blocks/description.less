@@ -18,12 +18,11 @@
   font-size: 36px;
   line-height: 40px;
   color: @black;
-  margin: 18px 0 38px;
+  margin: 28px 0 38px;
 }
 
 .description__item {
   display: flex;
-  margin-left: 0;
 }
 
 .description__text {
@@ -45,11 +44,11 @@
   .description__list {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 80px 0;
+    grid-gap: 80px 55px;
   }
 
   .description__title {
-    margin: 45px 30px 72px;
+    margin: 45px 0 72px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -62,15 +61,16 @@
   }
 
   .description__item {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     width: 245px;
-    margin-left: 30px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .description__wrapper {
-    width: 1220px;
+  .description {
+    padding-bottom: 40px;
   }
 
   .description__list {
@@ -88,11 +88,11 @@
   }
 
   .description__title {
-    margin: -5px 0 38px;
+    margin: 70px 0 38px;
   }
 
   .description__text {
-    margin: 34px 0;
+    margin: 28px 0;
     font-size: 16px;
     line-height: 24px;
   }

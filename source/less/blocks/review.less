@@ -1,10 +1,10 @@
-.review {
-  margin: 8px 0 27px;
+.review__wrapper {
+  margin-top: 8px;
+  margin-bottom: 27px;
 }
 
 .review__item {
-  margin: 0 20px;
-  padding: 20px 20px 8px;
+  padding: 20px 20px 18px;
   text-align: left;
   background-color: @light-grey;
 }
@@ -31,15 +31,14 @@
   color: @dark-grey;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid @border-dark-grey;
 }
 
 .review__link {
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 16px;
   color: @black;
   text-transform: uppercase;
   text-decoration: none;
@@ -47,7 +46,13 @@
 
 @media (min-width: @tablet-width) {
   .review__wrapper {
-    padding: 0 30px;
+    margin-top: -45px;
+    margin-bottom: 0;
+  }
+
+  .review__item {
+    margin-top: -40px;
+    padding: 70px 52px 56px;
   }
 
   .review__item + .review__item {
@@ -82,16 +87,22 @@
 
 @media (min-width: @desktop-width) {
   .review__wrapper {
-    width: 1220px;
-    margin: 58px 0 75px;
+    margin-top: 58px;
+    margin-bottom: 75px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .review__item {
+    margin-top: 50px;
     padding: 37px 0 60px;
     width: 570px;
+  }
+
+  .review__item + .review__item {
+    margin-top: 50px;
+    margin-left: 80px;
   }
 
   .review__title {
