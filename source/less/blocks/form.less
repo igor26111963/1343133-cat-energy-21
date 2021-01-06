@@ -64,7 +64,8 @@
   border: none;
 
   &--radio {
-    padding-top: 28px;
+    padding-top: 50px;
+    padding-bottom: 28px;
   }
 
   &--data {
@@ -295,13 +296,30 @@
   color: @black;
 }
 
-.form-border::before {
-  content: "";
-  display: inline-block;
-  width: 100vw;
-  height: 1px;
-  background-color: @special-border-grey;
+.form-selection__wrapper--border {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: @border-grey;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 180px;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: @border-grey;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .form__wrapper {
