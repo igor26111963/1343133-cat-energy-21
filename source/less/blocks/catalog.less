@@ -75,6 +75,14 @@
   color: @white;
   background-color: @basic-green;
   border: none;
+
+  &:hover {
+    background-color: @special-green;
+  }
+
+  &:active {
+    color: @button-active;
+  }
 }
 
 .catalog-top__button--show-more {
@@ -89,8 +97,15 @@
   color: @dark-grey;
   background-color: @light-grey;
   border: none;
-}
 
+  &:hover {
+    background-color: @special-dark-grey;
+  }
+
+  &:active {
+    color: @grey-button-active;
+  }
+}
 
 .catalog-top__items--show-more {
   flex-direction: column;

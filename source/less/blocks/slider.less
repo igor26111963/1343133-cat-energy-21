@@ -65,16 +65,18 @@
   top: 52px;
   left: 20px;
   width: 80px;
+  padding: 0 10px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   color: @dark-grey;
+  background-color: @special-grey;
 }
 
 .slider-inner__span--right {
-  left: 53px;
+  left: 55px;
 }
 
 .slider__summary {
@@ -174,15 +176,17 @@
   .slider-inner__span,
   .slider-inner__span--right {
     top: 83px;
-    left: 0;
-    width: 163px;
+    left: 16px;
+    width: 130px;
     margin-top: 13px;
     font-size: 14px;
     line-height: 14px;
   }
 
   .slider-inner__span--right {
-    left: 42px;
+    width: 142px;
+    padding: 0;
+    left: 51px;
   }
 
   .slider__summary {
@@ -224,12 +228,9 @@
     width: 367px;
   }
 
-  .slider-inner__text {
+  .slider-inner__text,
+  .slider-inner__text--right {
     margin-top: 50px;
-
-    &--right {
-      margin-top: 47px;
-    }
   }
 
   .slider-inner__span,
