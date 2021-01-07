@@ -7,10 +7,10 @@
   padding: 20px 20px 18px;
   text-align: left;
   background-color: @light-grey;
-}
 
-.review__item + .review__item {
-  margin-top: 20px;
+  & + & {
+    margin-top: 20px;
+  }
 }
 
 .review__title {
@@ -31,6 +31,7 @@
   color: @dark-grey;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid @border-grey;
 }
 
 .review__link {
@@ -46,22 +47,22 @@
 
 @media (min-width: @tablet-width) {
   .review__wrapper {
-    margin-top: -45px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
   .review__item {
-    margin-top: -40px;
+    margin-top: -36px;
     padding: 70px 52px 56px;
-  }
 
-  .review__item + .review__item {
-    margin-top: 30px;
+    & + & {
+      margin-top: 28px;
+    }
   }
 
   .review__title {
     margin-left: 1px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -71,7 +72,7 @@
     font-size: 16px;
     line-height: 24px;
     color: @black;
-    margin-bottom: 52px;
+    margin-bottom: 31px;
     border-bottom: none;
 
     &--pro {
@@ -87,8 +88,8 @@
 
 @media (min-width: @desktop-width) {
   .review__wrapper {
-    margin-top: 58px;
-    margin-bottom: 75px;
+    margin-top: -22px;
+    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -98,11 +99,11 @@
     margin-top: 50px;
     padding: 37px 0 60px;
     width: 570px;
-  }
 
-  .review__item + .review__item {
-    margin-top: 50px;
-    margin-left: 80px;
+    & + & {
+      margin-top: 50px;
+      margin-left: 80px;
+    }
   }
 
   .review__title {

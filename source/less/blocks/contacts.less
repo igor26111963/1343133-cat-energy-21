@@ -7,7 +7,7 @@
 
 .contacts-description__title {
   width: 138px;
-  margin: 27px 0;
+  margin: 29px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -19,7 +19,7 @@
 .contacts-description__address,
 .contacts-description__span {
   width: 137px;
-  padding-top: 11px;
+  padding-top: 15px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -33,6 +33,10 @@
 }
 
 .main-form .contacts {
+  background-color: @light-grey;
+}
+
+.main-catalog .contacts {
   background-color: @light-grey;
 }
 
@@ -89,10 +93,11 @@
 @media (min-width: @desktop-width) {
   .contacts__wrapper {
     position: relative;
-    margin-top: -198px;
+    margin-top: -191px;
   }
 
-  .main-form .contacts {
+  .main-form .contacts,
+  .main-catalog .contacts {
     margin-top: 282px;
   }
 

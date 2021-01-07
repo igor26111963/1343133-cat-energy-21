@@ -2,10 +2,6 @@
   padding-bottom: 24px;
 }
 
-.description__wrapper {
-  padding-left: 20px;
-}
-
 .description__list {
   display: grid;
   padding: 0;
@@ -26,7 +22,9 @@
 }
 
 .description__text {
-  margin: 2px 20px;
+  margin-top: 4px;
+  margin-left: 20px;
+  margin-bottom: 0;
   max-width: 200px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
@@ -44,7 +42,7 @@
   .description__list {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 80px 55px;
+    grid-gap: 82px 60px;
   }
 
   .description__title {
@@ -70,7 +68,7 @@
 
 @media (min-width: @desktop-width) {
   .description {
-    padding-bottom: 40px;
+    padding-bottom: 42px;
   }
 
   .description__list {

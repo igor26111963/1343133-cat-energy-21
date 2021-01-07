@@ -8,7 +8,6 @@
 .slider__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px;
 }
 
 .slider__title {
@@ -21,8 +20,9 @@
 }
 
 .slider__text {
-  width: 279px;
-  margin: 0;
+  width: 280px;
+  margin-top: 4px;
+  margin-bottom: 0;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -31,30 +31,40 @@
 }
 
 .slider-inner {
-  max-width: 370px;
-  margin-top: 18px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.slider-inner__text {
-  width: 123px;
-  display: grid;
+.slider-inner__box {
+  position: relative;
+}
+
+.slider-inner__text,
+.slider-inner__text--right {
   font-size: 24px;
   line-height: 24px;
-  justify-items: center;
   color: @black;
-  margin: 22px 0 20px;
+  padding: 15px 42px 16px;
+  margin: 5px 0 20px;
+  border: 1px solid @grey-radio;
+  border-radius: 3px;
 }
 
-.slider-inner__text:last-child {
-  margin-left: 34px;
+.slider-inner__text--right {
+  margin-left: 32px;
+  padding: 15px 20px 16px;
 }
 
-.slider-inner__span {
-  width: 77px;
-  margin-top: 10px;
+.slider-inner__span,
+.slider-inner__span--right {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 52px;
+  left: 20px;
+  width: 80px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -63,10 +73,8 @@
   color: @dark-grey;
 }
 
-.slider__span {
-  font-size: 16px;
-  line-height: 20px;
-  color: @black;
+.slider-inner__span--right {
+  left: 53px;
 }
 
 .slider__summary {
@@ -74,7 +82,7 @@
   line-height: 20px;
   color: @black;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: 13px;
   margin-left: 46px;
 }
 
@@ -91,14 +99,53 @@
   }
 }
 
+.slider-buttons__box {
+  width: 228px;
+  margin: 54px 0 37px 27px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-buttons__inner {
+  width: 84px;
+  margin: 2px 0;
+  padding: 4px 6px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid @border-grey;
+  border-radius: 6px;
+  background-color: @white;
+}
+
+.slider-buttons__button {
+  display: none;
+  width: 35px;
+  border: none;
+  padding: 3px 0;
+  background-color: @basic-green;
+  border-radius: 6px;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__span {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @black;
+}
+
 @media (min-width: @tablet-width) {
-  .compare__wrapper {
-    padding: 41px 0 35px;
+  .slider__wrapper {
+    padding: 11px 0 0;
   }
 
   .slider__title {
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 31px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -109,36 +156,46 @@
     line-height: 24px;
   }
 
-  .slider-inner__text {
+  .slider-inner__text,
+  .slider-inner__text--right {
     width: 162px;
-    margin-top: 37px;
+    margin-top: 33px;
     padding-top: 15px;
+    padding-left: 57px;
     font-size: 30px;
     line-height: 37px;
   }
 
-  .slider-inner__text:last-child {
-    margin-left: 41px;
+  .slider-inner__text--right {
+    margin-left: 42px;
+    padding-left: 31px;
   }
 
-  .slider-inner__span {
+  .slider-inner__span,
+  .slider-inner__span--right {
+    top: 83px;
+    left: 0;
     width: 163px;
     margin-top: 13px;
     font-size: 14px;
     line-height: 14px;
   }
 
+  .slider-inner__span--right {
+    left: 42px;
+  }
+
   .slider__summary {
-    margin-top: 65px;
+    margin-top: 63px;
     width: 174px;
-    margin-left: 150px;
+    margin-left: 168px;
     font-size: 20px;
     line-height: 27px;
     text-align: right;
   }
 
   .slider__box {
-    margin: 29px auto 32px;
+    margin: 29px auto 26px;
   }
 
   .slider__slide {
@@ -148,15 +205,15 @@
 }
 
 @media (min-width: @desktop-width) {
-  .compare__wrapper {
-    padding-top: 5px;
+  .slider__wrapper {
+    padding-top: 0;
     height: 656px;
     flex-direction: column;
-    transform: translateY(-143px);
+    transform: translateY(-167px);
   }
 
   .slider__title {
-    margin-bottom: 132px;
+    margin-bottom: 112px;
   }
 
   .slider__text {
@@ -169,11 +226,20 @@
 
   .slider-inner__text {
     margin-top: 50px;
+
+    &--right {
+      margin-top: 47px;
+    }
+  }
+
+  .slider-inner__span,
+  .slider-inner__span--right {
+    top: 98px;
   }
 
   .slider__summary {
     width: 327px;
-    margin: 34px 0;
+    margin: 36px 0;
     display: flex;
     justify-content: space-between;
   }

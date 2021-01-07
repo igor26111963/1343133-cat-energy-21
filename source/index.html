@@ -9,13 +9,15 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header header--index">
     <div class="header__wrapper wrapper">
       <div class="header-logo">
         <a class="header-logo__link" href="index.html">
           <img src="https://via.placeholder.com/190x52" alt="Логотип магазина кормов для кошек">
         </a>
-        <button class="header-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="header-logo__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
       <nav class="header-nav header-nav--closed header-nav--nojs">
         <div class="header-nav__wrapper">
@@ -86,41 +88,47 @@
           </li>
           <li class="description__item">
             <img class="description__image" src="https://via.placeholder.com/60x60" alt="значок времени">
-            <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
             </p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="compare">
-      <div class="compare__wrapper wrapper">
-        <h2 class="compare__title">Живой пример</h2>
-        <p class="compare__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+    <section class="slider">
+      <div class="slider__wrapper wrapper">
+        <h2 class="slider__title">Живой пример</h2>
+        <p class="slider__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему&nbsp;спит по
+          16
           часов в день. </p>
-        <div class="compare-inner">
-          <p class="compare-inner__text">5 КГ
-            <span class="compare-inner__span">снижение веса</span>
-          </p>
-          <p class="compare-inner__text">60 ДНЕЙ
-            <span class="compare-inner__span">затрачено времени</span>
-          </p>
+        <div class="slider-inner">
+          <div class="slider-inner__box">
+            <p class="slider-inner__text">5 КГ</p>
+            <span class="slider-inner__span">снижение веса</span>
+          </div>
+          <div class="slider-inner__box">
+            <p class="slider-inner__text--right">60 ДНЕЙ</p>
+            <span class="slider-inner__span--right">затрачено времени</span>
+          </div>
         </div>
         <p class="slider__summary">Затраты на питание:<span> 15 000 РУБ.</span></p>
-        <div class="slider__box">
+        <div class="slider__container">
           <div class="slider__slide slider__slide--active">
             <img src="https://via.placeholder.com/311x232" alt="фото толстого кота">
-            <span class="slider__span slider__span--before">было</span>
-            <span class="slider__span slider__span--after">стало</span>
           </div>
           <div class="slider__slide">
             <img src="https://via.placeholder.com/311x232" alt="фото худого кота">
-            <span class="slider__span slider__span--before">было</span>
-            <span class="slider__span slider__span--after">стало</span>
           </div>
-          <div class="slider-button__inner">
-            <button class="slider-buttons__button" type="button">Предидущее фото</button>
-            <button class="slider-buttons__button" type="button">Следующее фото</button>
+          <div class="slider-buttons__box">
+            <span class="slider__span slider__span--before">было</span>
+            <div class="slider-buttons__inner">
+              <button class="slider-buttons__button slider-buttons__button--active" type="button"><span
+                  class="visually-hidden">Предидущее
+                  фото</span></button>
+              <button class="slider-buttons__button" type="button"><span class="visually-hidden">Следующее
+                  фото</span></button>
+            </div>
+            <span class="slider__span slider__span--after">стало</span>
           </div>
         </div>
       </div>
