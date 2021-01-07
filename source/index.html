@@ -15,7 +15,9 @@
         <a class="header-logo__link" href="index.html">
           <img src="https://via.placeholder.com/190x52" alt="Логотип магазина кормов для кошек">
         </a>
-        <button class="header-logo__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="header-logo__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
       <nav class="header-nav header-nav--closed header-nav--nojs">
         <div class="header-nav__wrapper">
@@ -110,20 +112,23 @@
           </div>
         </div>
         <p class="slider__summary">Затраты на питание:<span> 15 000 РУБ.</span></p>
-        <div class="slider__box">
+        <div class="slider__container">
           <div class="slider__slide slider__slide--active">
             <img src="https://via.placeholder.com/311x232" alt="фото толстого кота">
-            <span class="slider__span slider__span--before">было</span>
-            <span class="slider__span slider__span--after">стало</span>
           </div>
           <div class="slider__slide">
             <img src="https://via.placeholder.com/311x232" alt="фото худого кота">
-            <span class="slider__span slider__span--before">было</span>
-            <span class="slider__span slider__span--after">стало</span>
           </div>
-          <div class="slider-button__inner">
-            <button class="slider-buttons__button" type="button">Предидущее фото</button>
-            <button class="slider-buttons__button" type="button">Следующее фото</button>
+          <div class="slider-buttons__box">
+            <span class="slider__span slider__span--before">было</span>
+            <div class="slider-buttons__inner">
+              <button class="slider-buttons__button slider-buttons__button--active" type="button"><span
+                  class="visually-hidden">Предидущее
+                  фото</span></button>
+              <button class="slider-buttons__button" type="button"><span class="visually-hidden">Следующее
+                  фото</span></button>
+            </div>
+            <span class="slider__span slider__span--after">стало</span>
           </div>
         </div>
       </div>
