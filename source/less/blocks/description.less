@@ -18,7 +18,37 @@
 }
 
 .description__item {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: -40px;
+    left: 117px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: @light-grey;
+  }
+
+  &--first::after {
+    content: "1";
+  }
+
+  &--second::after {
+    content: "2";
+  }
+
+  &--thid::after {
+    content: "3";
+  }
+
+  &--fourth::after {
+    content: "4";
+  }
 }
 
 .description__text {
@@ -63,6 +93,10 @@
     flex-wrap: wrap;
     width: 245px;
     margin-left: 0;
+
+    &::after {
+      display: block;
+    }
   }
 }
 

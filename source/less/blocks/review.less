@@ -8,12 +8,24 @@
   text-align: left;
   background-color: @light-grey;
 
-  & + & {
+  &--second {
     margin-top: 20px;
   }
 }
 
+.review__item--second .review__title::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -76px;
+  width: 67px;
+  height: 50px;
+  background-image: url("/img/cat-back-big.svg");
+  background-repeat: no-repeat;
+}
+
 .review__title {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -21,6 +33,17 @@
   color: @black;
   text-transform: uppercase;
   margin: 10px 0 30px 71px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -65px;
+    width: 50px;
+    height: 53px;
+    background-image: url("/img/cat-back.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .review__text {
@@ -35,6 +58,7 @@
 }
 
 .review__link {
+  position: relative;
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -43,6 +67,17 @@
   color: @black;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 100px;
+    width: 32px;
+    height: 12px;
+    background-image: url("/img/icon-arrow.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -55,7 +90,7 @@
     margin-top: -36px;
     padding: 70px 52px 56px;
 
-    & + & {
+    &--second {
       margin-top: 28px;
     }
   }
@@ -65,6 +100,22 @@
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .review__title::before {
+    width: 200px;
+    height: 211px;
+    top: 5px;
+    left: 405px;
+    background-image: url("/img/cat-back-tablet.svg");
+  }
+
+  .review__item--second .review__title::before {
+    top: 10px;
+    left: 360px;
+    width: 268px;
+    height: 200px;
+    background-image: url("/img/cat-back-big-tablet.svg");
   }
 
   .review__text {
@@ -83,6 +134,11 @@
   .review__link {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 10px;
+      left: 120px;
+    }
   }
 }
 
@@ -100,7 +156,7 @@
     padding: 37px 0 60px;
     width: 570px;
 
-    & + & {
+    &--second {
       margin-top: 50px;
       margin-left: 80px;
     }
@@ -108,6 +164,22 @@
 
   .review__title {
     margin: 38px 0  60px 215px;
+  }
+
+  .review__title::before {
+    top: -35px;
+    left: -158px;
+    width: 100px;
+    height: 106px;
+    background-image: url("/img/cat-back-desktop.svg");
+  }
+
+  .review__item--second .review__title::before {
+    top: -25px;
+    left: -180px;
+    width: 134px;
+    height: 100px;
+    background-image: url("/img/cat-back-big-desktop.svg");
   }
 
   .review__text {

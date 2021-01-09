@@ -13,9 +13,15 @@
     <div class="header__wrapper wrapper">
       <div class="header-logo">
         <a class="header-logo__link" href="index.html">
-          <img src="https://via.placeholder.com/190x52" alt="Логотип магазина кормов для кошек">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина кормов для кошек">
+          </picture>
         </a>
-        <button class="header-logo__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="header-logo__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
       <nav class="header-nav header-nav--closed header-nav--nojs">
         <div class="header-nav__wrapper">
@@ -27,7 +33,8 @@
               <a href="catalog.html" class="header-nav__link">каталог продукции</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--active">подбор программы</a>
+              <a href="#" class="header-nav__link header-nav__link--active">подбор
+                программы</a>
             </li>
           </ul>
         </div>
@@ -153,22 +160,22 @@
   <footer class="footer">
     <div class="footer__wrapper wrapper">
       <a class="footer__logo" href="index.html">
-        <img src="https://via.placeholder.com/128x24" alt="Логотип магазина кормов для кошек"> </a>
+        <img src="img/footer-logo.svg" alt="Логотип магазина кормов для кошек"> </a>
       <div class="footer-social">
         <ul class="footer-social__list">
           <li class="footer-social__item">
-            <a href="#" class="social__link--vkontakte">
-              <img src="https://via.placeholder.com/28x22" alt="иконка В контакте">
+            <a href="#" class="footer-social__link--vkontakte">
+              <img class="footer-social__image" src="img/icon_vkontakte.svg" alt="иконка В контакте">
             </a>
           </li>
           <li class="footer-social__item">
             <a href="#" class="footer-social__link--instagram">
-              <img src="https://via.placeholder.com/20x20" alt="иконка Инстаграм">
+              <img class="footer-social__image" src="img/icon_instagram.svg" alt="иконка Инстаграм">
             </a>
           </li>
           <li class="footer-social__item">
             <a href="#" class="footer-social__link--facebook">
-              <img src="https://via.placeholder.com/22x22" alt="иконка Facebook">
+              <img class="footer-social__image" src="img/icon_facebook.svg" alt="иконка Facebook">
             </a>
           </li>
         </ul>
@@ -176,7 +183,7 @@
       <div class="footer-copyright">
         <p class="footer-copyright__text">HTML Academy</p>
         <a href="#" class="footer-copyright__link" aria-label="Логотип HTML Academy">
-          <img src="https://via.placeholder.com/27x34" alt="иконка HTML Academy">
+          <img src="img/html-logo.svg" alt="иконка HTML Academy">
         </a>
       </div>
     </div>

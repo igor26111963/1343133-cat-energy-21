@@ -2,10 +2,10 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: @white;
-  background-image: url("https://via.placeholder.com/320x302");
+  background-image: url("/img/index-background-mobile.png");
   background-repeat: no-repeat;
-  background-origin: content-box;
   margin-bottom: 22px;
+  background-size: 100vw 302px;
 }
 
 .promo__wrapper {
@@ -67,6 +67,9 @@
 
   .promo__wrapper {
     padding: 0 30px;
+    background-image: url("/img/index-can-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 250px;
   }
 
   .promo-description {
@@ -89,16 +92,8 @@
     margin-top: 43px;
   }
 
-  .promo__images {
-    width: 529px;
-    height: 609px;
-    margin-left: 117px;
-    margin-top: -105px;
-  }
-
   .promo__image {
-    width: 529px;
-    height: 609px;
+    display: none;
   }
 
   .promo__link {
@@ -107,6 +102,7 @@
     order: 0;
     padding: 17px 26px;
     margin-top: 49px;
+    margin-bottom: 550px;
     margin-left: 55px;
     font-size: 20px;
     line-height: 20px;
@@ -116,16 +112,17 @@
 @media (min-width: @desktop-width) {
   .promo {
     z-index: 0;
-    background-image: url("https://via.placeholder.com/720x694");
+    background-image: url("/img/index-background-desktop.png");
     background-repeat: no-repeat;
     background-size: 720px 694px;
-    background-position: 718px -140px;
+    background-position: 718px -90px;
     margin-top: -65px;
     padding-top: 90px;
   }
 
   .promo__wrapper {
     height: 550px;
+    background-image: none;
   }
 
   .promo-description {
@@ -145,17 +142,19 @@
     order: 1;
     width: 552px;
     height: 499px;
-    margin-top: -25px;
-    margin-left: -30px;
+    background-position: 0 0;
   }
 
   .promo__image {
+    display: block;
     width: 552px;
     height: 499px;
+    transform: translate(-120px, 15px);
   }
 
   .promo__link {
     margin-top: 52px;
     margin-left: 50px;
+    margin-bottom: 0;
   }
 }

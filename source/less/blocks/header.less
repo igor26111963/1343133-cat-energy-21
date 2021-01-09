@@ -19,6 +19,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
+}
+
+.header-logo__link:hover {
+  opacity: 0.8;
+}
+
+.header-logo__link:active {
+  opacity: 0.6;
 }
 
 .header-nav {
@@ -31,7 +40,7 @@
   .header-logo__button {
     position: relative;
     z-index: 20;
-    top: 14px;
+    top: 8px;
     left: 2px;
     width: 0;
     height: 0;
@@ -85,6 +94,10 @@
   .header__wrapper {
     justify-content: space-between;
     flex-direction: row;
+  }
+
+  .header-logo__link {
+    margin-top: 8px;
   }
 
   .header-nav {
