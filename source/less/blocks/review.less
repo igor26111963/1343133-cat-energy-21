@@ -17,7 +17,7 @@
   position: absolute;
   content: "";
   top: -3px;
-  left: -76px;
+  left: -78px;
   width: 67px;
   height: 50px;
   background-image: url("/img/cat-back-big.svg");
@@ -38,7 +38,7 @@
     position: absolute;
     content: "";
     top: -10px;
-    left: -65px;
+    left: -69px;
     width: 50px;
     height: 53px;
     background-image: url("/img/cat-back.svg");
@@ -103,15 +103,15 @@
   }
 
   .review__title::before {
+    top: 4px;
+    left: 393px;
     width: 200px;
     height: 211px;
-    top: 5px;
-    left: 405px;
     background-image: url("/img/cat-back-tablet.svg");
   }
 
   .review__item--second .review__title::before {
-    top: 10px;
+    top: 14px;
     left: 360px;
     width: 268px;
     height: 200px;
@@ -136,8 +136,8 @@
     line-height: 30px;
 
     &::after {
-      top: 10px;
-      left: 120px;
+      top: 9px;
+      left: 131px;
     }
   }
 }
@@ -168,14 +168,14 @@
 
   .review__title::before {
     top: -35px;
-    left: -158px;
+    left: -163px;
     width: 100px;
     height: 106px;
     background-image: url("/img/cat-back-desktop.svg");
   }
 
   .review__item--second .review__title::before {
-    top: -25px;
+    top: -29px;
     left: -180px;
     width: 134px;
     height: 100px;
@@ -192,5 +192,9 @@
   .review__link {
     margin-left: 52px;
     padding: 0;
+
+    &::after {
+      left: 133px;
+    }
   }
 }

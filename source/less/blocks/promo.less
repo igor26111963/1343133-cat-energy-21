@@ -32,15 +32,11 @@
   text-transform: uppercase;
 }
 
-.promo__images {
-  margin-top: -20px;
-}
-
 .promo__link {
   order: 1;
   width: 280px;
   margin-left: 0;
-  margin-top: 8px;
+  margin-top: -3px;
   padding: 11px 25px 11px 72px;
   font-size: 14px;
   line-height: 18px;
@@ -79,17 +75,17 @@
   }
 
   .promo-description__title {
-    font-size: 60px;
-    line-height: 60px;
     margin: 0;
     margin-top: 50px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .promo-description__text {
+    margin: 0;
+    margin-top: 40px;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
-    margin-top: 43px;
   }
 
   .promo__image {
@@ -102,8 +98,8 @@
     order: 0;
     padding: 17px 26px;
     margin-top: 49px;
-    margin-bottom: 550px;
-    margin-left: 55px;
+    margin-bottom: 503px;
+    margin-left: 53px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -112,12 +108,12 @@
 @media (min-width: @desktop-width) {
   .promo {
     z-index: 0;
+    margin-top: -78px;
+    padding-top: 90px;
     background-image: url("/img/index-background-desktop.png");
     background-repeat: no-repeat;
     background-size: 720px 694px;
-    background-position: 718px -90px;
-    margin-top: -65px;
-    padding-top: 90px;
+    background-position: 718px -52px;
   }
 
   .promo__wrapper {
@@ -126,12 +122,11 @@
   }
 
   .promo-description {
-    padding-top: 23px;
     padding-left: 50px;
   }
 
   .promo-description__title {
-    margin-top: 54px;
+    margin-top: 80px;
   }
 
   .promo-description__text {
@@ -140,16 +135,11 @@
 
   .promo__images {
     order: 1;
-    width: 552px;
-    height: 499px;
-    background-position: 0 0;
   }
 
   .promo__image {
     display: block;
-    width: 552px;
-    height: 499px;
-    transform: translate(-120px, 15px);
+    transform: translate(-120px, -2px);
   }
 
   .promo__link {
