@@ -1,14 +1,12 @@
 .promo {
+  margin-bottom: 22px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: @white;
-  background-image: url("/img/index-background-mobile.png");
-  background-repeat: no-repeat;
-  margin-bottom: 22px;
-  background-size: 100vw 302px;
 }
 
 .promo__wrapper {
+  margin-top: -307px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -57,15 +55,15 @@
 @media (min-width: @tablet-width) {
   .promo {
     color: @black;
-    margin-bottom: 56px;
-    background-image: none;
+  }
+
+  .promo__image {
+    display: none;
   }
 
   .promo__wrapper {
+    margin-top: 0;
     padding: 0 30px;
-    background-image: url("/img/index-can-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 250px;
   }
 
   .promo-description {
@@ -88,8 +86,8 @@
     line-height: 20px;
   }
 
-  .promo__image {
-    display: none;
+  .promo-description__image {
+    transform: translate(-30px, -588px);
   }
 
   .promo__link {
@@ -108,20 +106,35 @@
 @media (min-width: @desktop-width) {
   .promo {
     z-index: 0;
-    margin-top: -78px;
-    padding-top: 90px;
-    background-image: url("/img/index-background-desktop.png");
+
+  }
+
+  .promo::after {
+    display: block;
+    // position: absolute;
+    // top: -55px;
+    // right: 0;
+    // margin-top: -130px;
+    // margin-left: 720px;
+    position: absolute;
+    content: "";
+    top: -132px;
+    right: 0;
+    width: 720px;
+    height: 694px;
+    margin: 0 auto;
+    background-image: url(/img/index-background-desktop.png);
     background-repeat: no-repeat;
-    background-size: 720px 694px;
-    background-position: 718px -52px;
   }
 
   .promo__wrapper {
-    height: 550px;
+    // height: 550px;
     background-image: none;
   }
 
   .promo-description {
+    position: relative;
+    padding-top: 12px;
     padding-left: 50px;
   }
 
@@ -133,13 +146,10 @@
     margin-top: 40px;
   }
 
-  .promo__images {
-    order: 1;
-  }
-
-  .promo__image {
+  .promo-description__image {
     display: block;
-    transform: translate(-120px, -2px);
+    order: 1;
+    transform: translate(-117px, 10px);
   }
 
   .promo__link {
