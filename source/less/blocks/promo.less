@@ -106,10 +106,9 @@
 @media (min-width: @desktop-width) {
   .promo {
     z-index: 0;
-
   }
 
-  .promo::after {
+  .promo-description__title::after {
     display: block;
     // position: absolute;
     // top: -55px;
@@ -118,12 +117,12 @@
     // margin-left: 720px;
     position: absolute;
     content: "";
-    top: -132px;
-    right: 0;
+    top: -223px;
+    right: -141px;
     width: 720px;
     height: 694px;
     margin: 0 auto;
-    background-image: url(/img/index-background-desktop.png);
+    background-image: url("/img/index-background-desktop.png");
     background-repeat: no-repeat;
   }
 
@@ -139,6 +138,7 @@
   }
 
   .promo-description__title {
+    position: relative;
     margin-top: 80px;
   }
 
@@ -146,10 +146,10 @@
     margin-top: 40px;
   }
 
-  .promo-description__image {
+  .promo-description__images {
     display: block;
     order: 1;
-    transform: translate(-117px, 10px);
+    transform: translate(450px, 220px);
   }
 
   .promo__link {
