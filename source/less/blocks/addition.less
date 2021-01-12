@@ -108,7 +108,13 @@
   flex-direction: column;
   align-items: center;
   background-color: @basic-green;
-  background-image: url("/img/bg-addition-mobile.png");
+  background-image: url("../img/bg-addition-mobile.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-addition-mobile@2x.png");
+    background-size: 560px auto;
+  }
 }
 
 .addition-promo__text {
@@ -193,6 +199,13 @@
     padding: 22px 124px 24px 78px;
     flex-direction: row;
     justify-content: space-between;
+    background-image: url("../img/bg-addition-tablet.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-addition-tablet@2x.png");
+    background-size: 1416px auto;
+    }
   }
 
   .addition-promo__text {
@@ -225,6 +238,13 @@
     flex-direction: column;
     align-items: center;
     background-color: @basic-green;
+    background-image: url("../img/bg-addition-mobile.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-addition-mobile@2x.png");
+    background-size: 560px auto;
+    }
   }
 
   .addition-promo__text {
