@@ -1,5 +1,5 @@
 .header {
-  padding-bottom: 3px;
+  padding-bottom: 12px;
   border-bottom: 1px solid @special-border-grey;
 }
 
@@ -88,6 +88,7 @@
 
 @media (min-width: @tablet-width) {
   .header {
+    padding-bottom: 10px;
     border: none;
   }
 
@@ -99,8 +100,12 @@
   }
 
   .header-nav {
-    margin-top: 5px;
+    margin-top: 0;
     width: 440px;
+
+    &--index {
+      margin-top: 7px;
+    }
   }
 
   .header-nav__list {
@@ -148,14 +153,16 @@
     margin-top: 0;
   }
 
-  .header-nav {
+  .header-nav,
+  .header-nav--index {
     z-index: 1;
     margin-top: -5px;
     min-width: 483px;
   }
 
   .header-nav__list {
-    margin-left: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
     display: flex;
     justify-content: space-between;
   }
