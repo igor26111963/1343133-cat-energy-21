@@ -105,7 +105,16 @@
   padding: 13px;
   text-transform: uppercase;
   color: @dark-grey;
+  outline: none;
   border: 1px solid @border-grey;
+
+  &:hover {
+    border: 1px solid @grey-radio;
+  }
+
+  &:focus {
+    border: 1px solid @black;
+  }
 }
 
 .form-selection__radio {
@@ -184,19 +193,38 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-grey;
+  outline: none;
   border: 1px solid @border-grey;
 }
 
 .form-selection__mail-input {
-  background-image: url("/img/icon-email.svg");
+  background-image: url("../img/icon-email.svg");
   background-repeat: no-repeat;
   background-position: 96% center;
+
+  &:hover {
+    border: 1px solid @grey-radio;
+  }
+
+  &:disabled {
+    background-image: url("../img/icon-email-disabled.svg");
+    border: 1px solid @black;
+  }
 }
 
 .form-selection__phone-input {
-  background-image: url("/img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 96% center;
+
+  &:hover {
+    border: 1px solid @grey-radio;
+  }
+
+  &:disabled {
+    background-image: url("../img/icon-phone-disabled.svg");
+    border: 1px solid @black;
+  }
 }
 
 .form-selection__comment {
