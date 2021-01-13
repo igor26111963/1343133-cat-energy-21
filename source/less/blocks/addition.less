@@ -58,7 +58,7 @@
 }
 
 .addition__table {
-  margin-top: 12px;
+  margin-top: 10px;
   width: 280px;
 }
 
@@ -79,7 +79,7 @@
 
 .addition__button {
   width: 280px;
-  margin: 14px 0 15px;
+  margin: 13px 0 18px;
   padding: 8px 74px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -89,6 +89,14 @@
   color: @white;
   background-color: @basic-green;
   border: none;
+
+  &:hover {
+    background-color: @special-green;
+  }
+
+  &:active {
+    color: @button-active;
+  }
 }
 
 .addition-promo {
@@ -100,6 +108,13 @@
   flex-direction: column;
   align-items: center;
   background-color: @basic-green;
+  background-image: url("../img/bg-addition-mobile.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-addition-mobile@2x.png");
+    background-size: 560px auto;
+  }
 }
 
 .addition-promo__text {
@@ -150,7 +165,7 @@
   }
 
   .addition__text {
-    margin-top: 22px;
+    margin-top: 19px;
     margin-left: 36px;
     font-size: 20px;
     line-height: 20px;
@@ -174,16 +189,23 @@
 
   .addition__button {
     width: 632px;
-    margin: 22px 36px 28px;
+    margin: 21px 36px 28px;
     padding: 8px 74px;
   }
 
   .addition-promo {
     margin-top: 70px;
-    margin-bottom: 78px;
+    margin-bottom: 79       px;
     padding: 22px 124px 24px 78px;
     flex-direction: row;
     justify-content: space-between;
+    background-image: url("../img/bg-addition-tablet.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-addition-tablet@2x.png");
+      background-size: 1416px auto;
+    }
   }
 
   .addition-promo__text {
@@ -216,6 +238,13 @@
     flex-direction: column;
     align-items: center;
     background-color: @basic-green;
+    background-image: url("../img/bg-addition-mobile.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-addition-mobile@2x.png");
+      background-size: 560px auto;
+    }
   }
 
   .addition-promo__text {
@@ -251,7 +280,7 @@
   }
 
   .addition__text {
-    padding: 0;
+    margin: 0;
   }
 
   .addition__table {

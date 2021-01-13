@@ -1,10 +1,10 @@
 .catalog {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .catalog__title {
   margin: 0;
-  padding: 27px 21px 40px;
+  padding: 26px 19px 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -17,19 +17,23 @@
 }
 
 .catalog-top__items {
-  padding: 6px 7px 6px 22px;
+  padding: 7px 19px 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   border-top: 1px solid @border-grey;
-}
-
-.catalog-top__inner {
-  margin-left: 17px;
-  padding-left: 11px;
+  align-items: center;
 }
 
 .catalog-top__image {
-  margin-left: 10px;
+  margin-top: 20px;
+  margin-left: 28px;
+
+  &--small {
+    margin-top: 18px;
+    margin-left: 35px;
+    margin-right: 9px;
+  }
 }
 
 .catalog-top__title {
@@ -47,7 +51,7 @@
 
 .catalog-top__table {
   width: 141px;
-  border-spacing: 0;
+  border-spacing: 1px 0;
 }
 
 .catalog-top__line {
@@ -65,8 +69,8 @@
 .catalog-top__button {
   display: block;
   width: 280px;
-  margin: 20px 0;
-  padding: 8px 74px;
+  margin: 17px 0 22px;
+  padding: 10px 74px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -75,6 +79,14 @@
   color: @white;
   background-color: @basic-green;
   border: none;
+
+  &:hover {
+    background-color: @special-green;
+  }
+
+  &:active {
+    color: @button-active;
+  }
 }
 
 .catalog-top__button--show-more {
@@ -89,8 +101,15 @@
   color: @dark-grey;
   background-color: @light-grey;
   border: none;
-}
 
+  &:hover {
+    background-color: @special-dark-grey;
+  }
+
+  &:active {
+    color: @grey-button-active;
+  }
+}
 
 .catalog-top__items--show-more {
   flex-direction: column;
@@ -101,7 +120,6 @@
 .catalog-top__title--show-more {
   position: relative;
   margin-top: 74px;
-  margin-left: -8px;
   margin-bottom: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -115,7 +133,7 @@
     position: absolute;
     content: "";
     top: -40px;
-    left: 132px;
+    left: 88px;
     width: 30px;
     height: 2px;
     background-color: @grey-plus;
@@ -125,7 +143,7 @@
     position: absolute;
     content: "";
     top: -39px;
-    left: 131px;
+    left: 88px;
     width: 30px;
     height: 2px;
     background-color: @grey-plus;
@@ -134,8 +152,7 @@
 }
 
 .catalog-top__text {
-  margin-top: 9px;
-  margin-left: -3px;
+  margin: 9px 0;
   font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -153,7 +170,7 @@
 
   .catalog__title {
     margin: 0;
-    padding: 55px 0;
+    padding: 51px 0 56px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -162,7 +179,7 @@
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 62px 60px;
+    grid-gap: 59px 60px;
   }
 
   .catalog-top__items {
@@ -185,12 +202,20 @@
     margin-left: 0;
     width: 168px;
     height: 200px;
+
+    &--small {
+      margin-top: -50px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 161px;
+      height: 171px;
+    }
   }
 
   .catalog-top__inner {
     margin: 0;
     padding: 0;
-    padding-top: 35px;
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -208,8 +233,9 @@
   }
 
   .catalog-top__title--show-more {
-    margin-top: 157px;
+    margin-top: 156px;
     margin-left: 0;
+    margin-bottom: 0;
 
     &::before {
       top: -76px;
@@ -260,29 +286,33 @@
 @media (min-width: @desktop-width) {
   .catalog {
     width: 1220px;
-    margin-bottom: 73px;
+    margin-bottom: 80px;
   }
 
   .catalog__title {
-    padding: 70px 0 55px;
+    padding: 60px 0 55px;
   }
 
   .catalog-top__box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 69px 80px;
+    gap: 67px 80px;
   }
 
   .catalog-top__image {
     margin-top: -80px;
   }
 
+  .catalog-top__image--small {
+    margin-top: -53px;
+  }
+
   .catalog-top__inner {
-    padding-top: 40px;
+    padding-top: 36px;
   }
 
   .catalog-top__title {
-    margin-bottom: 17px;
+    margin-bottom: 19px;
   }
 
   .catalog-top__title--show-more {
