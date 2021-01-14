@@ -29,9 +29,9 @@
     </symbol>
   </svg>
   <header class="header">
-    <div class="header__wrapper wrapper">
+    <div class="header__wrapper">
       <div class="header-logo">
-        <a class="header-logo__link" href="index.html">
+        <a class="header-logo__link">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -42,23 +42,22 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="header-nav header-nav--closed header-nav--nojs">
-        <div class="header-nav__wrapper">
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="index.html" class="header-nav__link">главная</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--active">каталог
-                продукции</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="form.html" class="header-nav__link">подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </div>
+    <nav class="header-nav--index header-nav--opened">
+      <div class="header-nav__wrapper">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="index.html" class="header-nav__link">главная</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link header-nav__link--active">каталог продукции</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="form.html" class="header-nav__link">подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="main-catalog">
     <section class="catalog">
