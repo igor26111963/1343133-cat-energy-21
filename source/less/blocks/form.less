@@ -510,6 +510,14 @@
 
   .form-selection__mail-input {
     margin-left: 20px;
+
+    &:focus:required:valid {
+      border: 1px solid @black;
+    }
+
+    &:focus:required:invalid {
+      border: 1px solid @red;
+    }
   }
 
   .form-selection__list--user {

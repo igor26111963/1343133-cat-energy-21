@@ -91,17 +91,17 @@
               <li class="form-selection__item">
                 <label for="selection-name">ИМЯ:*</label>
                 <input class="form-selection__text" id="selection-name" type="text" name="name" placeholder="барсик"
-                  required>
+                  pattern="^[А-Яа-яЁё\s]+$">
               </li>
               <li class="form-selection__item">
                 <label for="selection-weight">Вес (кг):*</label>
                 <input class="form-selection__text" id="selection-weight" type="text" name="weigth" placeholder="7"
-                  required>
+                  pattern="[1-9]">
               </li>
               <li class="form-selection__item">
                 <label for="selection-years">Возраст (лет):</label>
                 <input class="form-selection__text" id="selection-years" type="text" name="years" placeholder="7"
-                  required>
+                  pattern="[1-9]">
               </li>
             </ul>
           </fieldset>
@@ -141,7 +141,7 @@
               <li class="form-selection__item">
                 <label for="selection-phone">Телефон:*</label>
                 <input class="form-selection__phone-input" type="tel" name="phone" id="selection-phone"
-                  placeholder="8 (960) 900-60-90" required disabled>
+                  placeholder="8 (960) 900-60-90" pattern="8\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
               </li>
             </ul>
           </fieldset>
