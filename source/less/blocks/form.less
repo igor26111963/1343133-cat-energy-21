@@ -115,6 +115,10 @@
   &:focus {
     border: 1px solid @black;
   }
+
+  &:invalid {
+    border: 1px solid @red;
+  }
 }
 
 .form-selection__radio {
@@ -206,9 +210,18 @@
     border: 1px solid @grey-radio;
   }
 
+  &:focus {
+    border: 1px solid @black;
+  }
+
   &:disabled {
     background-image: url("../img/icon-email-disabled.svg");
     border: 1px solid @black;
+  }
+
+  &:invalid {
+    background-image: url("../img/icon-email-invalid.svg");
+    border: 1px solid @red;
   }
 }
 
@@ -221,9 +234,18 @@
     border: 1px solid @grey-radio;
   }
 
+  &:focus {
+    border: 1px solid @black;
+  }
+
   &:disabled {
     background-image: url("../img/icon-phone-disabled.svg");
     border: 1px solid @black;
+  }
+
+  &:invalid {
+    background-image: url("../img/icon-phone-invalid.svg");
+    border: 1px solid @red;
   }
 }
 
