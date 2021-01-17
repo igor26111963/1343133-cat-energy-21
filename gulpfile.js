@@ -37,7 +37,7 @@ exports.styles = styles;
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build/html"));
+    .pipe(gulp.dest("build"));
 }
 
 // Images
@@ -49,7 +49,7 @@ const images = () => {
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
@@ -59,7 +59,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
@@ -130,7 +130,7 @@ const build = gulp.series(
     sprite,
     createWebp
   )
-);
+)
 
 exports.build = build;
 
@@ -141,9 +141,10 @@ exports.default = gulp.series(
     html,
     copy,
     sprite,
+    images,
     createWebp
   ),
   gulp.series(
     server, watcher
   )
-);
+)
