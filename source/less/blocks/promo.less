@@ -113,12 +113,17 @@
     z-index: 0;
   }
 
-  .promo-description::after {
+  .promo__wrapper {
+    position: relative;
+    // background-image: none;
+  }
+
+  .promo__wrapper::after {
     display: block;
     position: absolute;
     content: "";
     top: -136px;
-    right: -141px;
+    right: -110px;
     width: 720px;
     height: 694px;
     margin: 0 auto;
@@ -131,12 +136,7 @@
     }
   }
 
-  .promo__wrapper {
-    background-image: none;
-  }
-
   .promo-description {
-    position: relative;
     padding-top: 2px;
     padding-left: 50px;
   }
@@ -151,6 +151,7 @@
   }
 
   .promo-description__images {
+    z-index: 2;
     display: block;
     order: 1;
   }
