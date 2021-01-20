@@ -87,7 +87,6 @@
 }
 
 .catalog__button {
-  display: block;
   width: 280px;
   margin: 17px 0 21px;
   padding: 10px 74px;
@@ -98,7 +97,8 @@
   text-transform: uppercase;
   color: @white;
   background-color: @basic-green;
-  border: none;
+  text-decoration: none;
+  text-align: center;
 
   &:hover {
     background-color: @special-green;
@@ -120,7 +120,8 @@
   text-transform: uppercase;
   color: @dark-grey;
   background-color: @light-grey;
-  border: none;
+  text-decoration: none;
+  text-align: center;
 
   &:hover {
     background-color: @special-dark-grey;
@@ -387,6 +388,7 @@
   }
 
   .catalog__title--show-more {
+    padding: 0;
     margin-top: 157px;
     margin-bottom: 21px;
   }
