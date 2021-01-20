@@ -16,7 +16,8 @@ const sync = require("browser-sync").create();
 // Styles
 
 const styles = () => {
-  return gulp.src("source/less/style.less")
+  return gulp.src(["source/less/style.less",
+    "source/less/global/body.less"])
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
