@@ -3,21 +3,33 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: @white;
-  background-image: url("../img/index-background-mobile.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-mobile@2x.png");
-    background-size: 640px auto;
-  }
 }
 
 .promo__wrapper {
+  position: relative;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  &::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -20px;
+    width: 320px;
+    height: 302px;
+    background-color: @background-green;
+    background-image: url("../img/index-background-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.png");
+      background-size: 640px auto;
+    }
+  }
 }
 
 .promo-description {
@@ -63,12 +75,15 @@
 @media (min-width: @tablet-width) {
   .promo {
     color: @black;
-    background-image: none;
   }
 
   .promo__wrapper {
     margin-top: 0;
     padding: 0 30px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .promo-description {
@@ -91,7 +106,7 @@
     line-height: 20px;
   }
 
-  .promo-description__image {
+  .promo__image {
     transform: translate(-30px, -588px);
   }
 
@@ -111,18 +126,21 @@
 @media (min-width: @desktop-width) {
   .promo {
     z-index: 0;
+    position: relative;
   }
 
-  .promo-description__title::after {
+  .promo::after {
     display: block;
     position: absolute;
     content: "";
-    top: -223px;
-    right: -141px;
-    width: 720px;
+    top: -137px;
+    right: 0;
+    width: 50%;
     height: 694px;
-    margin: 0 auto;
+    background-color: @background-green;
     background-image: url("../img/index-background-desktop.png");
+    background-position: top right;
+    background-size: contain;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -131,30 +149,26 @@
     }
   }
 
-  .promo__wrapper {
-    background-image: none;
-  }
-
   .promo-description {
     padding-top: 2px;
     padding-left: 50px;
   }
 
   .promo-description__title {
-    position: relative;
-    margin-top: 80px;
+    margin-top: 84px;
   }
 
   .promo-description__text {
     margin-top: 40px;
   }
 
-  .promo-description__images {
+  .promo__images {
+    z-index: 2;
     display: block;
     order: 1;
   }
 
-  .promo-description__image {
+  .promo__image {
     transform: translate(418px, -370px);
   }
 

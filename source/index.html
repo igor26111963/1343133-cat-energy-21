@@ -28,10 +28,6 @@
       <path
         d="M13.64.02L13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24z" />
     </symbol>
-    <symbol viewBox=" 0 0 32 12" id="icon-arrow">
-      <path stroke="#000" stroke-width="2" d="M0 6h18" />
-      <path d="M24 6l-6.75 5.2V.8L24 6z" fill="#000" />
-    </symbol>
   </svg>
   <header class="header">
     <div class="header__wrapper">
@@ -48,17 +44,17 @@
         </button>
       </div>
     </div>
-    <nav class="header-nav--index header-nav--opened">
+    <nav class="header-nav header-nav--index header-nav--opened">
       <div class="header-nav__wrapper">
         <ul class="header-nav__list">
           <li class="header-nav__item">
-            <a class="header-nav__link--index header-nav__link--active">главная</a>
+            <a class="header-nav__link header-nav__link--index header-nav__link--active">главная</a>
           </li>
           <li class="header-nav__item">
-            <a href="catalog.html" class="header-nav__link--index">каталог продукции</a>
+            <a href="catalog.html" class="header-nav__link header-nav__link--index">каталог продукции</a>
           </li>
           <li class="header-nav__item">
-            <a href="form.html" class="header-nav__link--index">подбор программы</a>
+            <a href="form.html" class="header-nav__link header-nav__link--index">подбор программы</a>
           </li>
         </ul>
       </div>
@@ -72,16 +68,16 @@
           <p class="promo-description__text">Занялся собой? Займись котом!</p>
         </div>
         <a href="form.html" class="promo__link">подобрать программу</a>
-        <div class="promo-description__images">
+        <div class="promo__images">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)"
               srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/index-can-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+              srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
-            <img class="promo-description__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x"
+            <img class="promo__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x"
               alt="Коробка с кормом Cat Energy">
           </picture>
         </div>
@@ -93,25 +89,13 @@
           <h3 class="review__title">похудение</h3>
           <p class="review__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="catalog.html" class="review__link">каталог slim
-            <span>
-              <svg class="review__link-arrow" width="20" height="12">
-                <use xlink:href="#icon-arrow"></use>
-              </svg>
-            </span>
-          </a>
+          <a href="catalog.html" class="review__link review__link--slim">каталог slim</a>
         </div>
         <div class="review__item review__item--second">
           <h3 class="review__title">Набор массы</h3>
           <p class="review__text review__text--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
             Energy Pro поможет вашему коту&nbsp;нарастить необходимые мышцы!</p>
-          <a href="catalog.html" class="review__link">каталог pro
-            <span>
-              <svg class="review__link-arrow" width="20" height="12">
-                <use xlink:href="#icon-arrow"></use>
-              </svg>
-            </span>
-          </a>
+          <a href="catalog.html" class="review__link review__link--pro">каталог pro</a>
         </div>
       </div>
     </section>
@@ -165,8 +149,8 @@
             <span class="slider-inner__span">снижение веса</span>
           </div>
           <div class="slider-inner__box">
-            <p class="slider-inner__text--right">60 ДНЕЙ</p>
-            <span class="slider-inner__span--right">затрачено времени</span>
+            <p class="slider-inner__text slider-inner__text--right">60 ДНЕЙ</p>
+            <span class="slider-inner__span slider-inner__span--right">затрачено времени</span>
           </div>
         </div>
         <p class="slider__summary">Затраты на питание:<span> 15 000 РУБ.</span></p>
@@ -180,7 +164,7 @@
               <source type="image/webp" srcset="img/slider-before-mobile.webp 1x, img/slider-before-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/slider-desktop.png 1x, img/slider-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet@2x.png 2x">
-              <img class="slide-image" src="img/slider-before-mobile.png" srcset="img/slider-before-mobile@2x.png"
+              <img class="slide-image" src="img/slider-before-mobile.png" srcset="img/slider-before-mobile@2x.png 2x"
                 width="311" height="232" alt="фото толстого кота">
             </picture>
           </div>
@@ -193,10 +177,11 @@
               <source type="image/webp" srcset="img/slider-after-mobile.webp 1x, img/slider-after-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/slider-desktop.png 1x, img/slider-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet@2x.png 2x">
-              <img src="img/slider-after-mobile.png" srcset="img/slider-after-mobile@2x.png" alt="фото худого кота">
+              <img src="img/slider-after-mobile.png" srcset="img/slider-after-mobile@2x.png 2x" width="251" height="240"
+                alt="фото худого кота">
             </picture>
           </div>
-          <div class="slider-buttons__box">
+          <div class="slider-buttons">
             <span class="slider__span slider__span--before">было</span>
             <div class="slider-buttons__inner">
               <button class="slider-buttons__button slider-buttons__button--active" type="button"><span
@@ -213,7 +198,8 @@
     <section class="contacts">
       <div class="contacts__wrapper wrapper">
         <div class="contacts-description">
-          <h4 class="contacts-description__title">приглашаем<br> к сотрудничеству<br> дилеров!</h4>
+          <h4 class="contacts-description__title">приглашаем<br><span class="contacts-description__title-span">к
+              сотрудничеству<br>дилеров!</span></h4>
           <p class="contacts-description__address">ул. Большая<br> Конюшенная, д. 19/8<br><span
               class="contacts-description__span">Санкт-Петербург</span></p>
         </div>
@@ -232,21 +218,21 @@
         <ul class="footer-social__list">
           <li class="footer-social__item">
             <a href="#" class="footer-social__link">
-              <svg class="footer-social__icon--vkontakte" width="23" height="16">
+              <svg class="footer-social__icon footer-social__icon--vkontakte" width="23" height="16">
                 <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
             <a href="#" class="footer-social__link">
-              <svg class="footer-social__icon--instagram" width="16" height="16">
+              <svg class="footer-social__icon footer-social__icon--instagram" width="16" height="16">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
             <a href="#" class="footer-social__link">
-              <svg class="footer-social__icon--facebook" width="22" height="22">
+              <svg class="footer-social__icon footer-social__icon--facebook" width="22" height="22">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
