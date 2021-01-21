@@ -3,21 +3,33 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: @white;
-  background-image: url("../img/index-background-mobile.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-mobile@2x.png");
-    background-size: 640px auto;
-  }
 }
 
 .promo__wrapper {
+  position: relative;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  &::after{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -20px;
+    width: 320px;
+    height: 302px;
+    background-color: @background-green;
+    background-image: url("../img/index-background-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.png");
+      background-size: 640px auto;
+    }
+  }
 }
 
 .promo-description {
@@ -63,12 +75,15 @@
 @media (min-width: @tablet-width) {
   .promo {
     color: @black;
-    background-image: none;
   }
 
   .promo__wrapper {
     margin-top: 0;
     padding: 0 30px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .promo-description {
@@ -111,22 +126,21 @@
 @media (min-width: @desktop-width) {
   .promo {
     z-index: 0;
-  }
-
-  .promo__wrapper {
     position: relative;
   }
 
-  .promo__wrapper::after {
+  .promo::after {
     display: block;
     position: absolute;
     content: "";
-    top: -136px;
-    right: -110px;
-    width: 720px;
+    top: -137px;
+    right: 0;
+    width: 50%;
     height: 694px;
-    margin: 0 auto;
+    background-color: @background-green;
     background-image: url("../img/index-background-desktop.png");
+    background-position: top right;
+    background-size: contain;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
