@@ -6,11 +6,14 @@
 }
 
 .promo__wrapper {
-  position: relative;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (max-width: @tablet-width) {
+    position: relative;
+  }
 
   &::after {
     z-index: -1;
@@ -27,7 +30,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-mobile@2x.png");
-      background-size: 640px auto;
+      background-size: 320px auto;
     }
   }
 }

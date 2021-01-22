@@ -10,7 +10,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 20px;
   text-transform: uppercase;
   color: @special-black;
 }
@@ -48,13 +48,17 @@
     background-color: @light-grey;
   }
 
+  .main .contacts {
+    background-color: @white;
+  }
+
   .main-form .contacts {
     margin-top: 75px;
   }
 
   .contacts-description {
-    margin: 0 40px 0 41px;
-    padding-top: 65px;
+    margin: 0 43px 0 40px;
+    padding-top: 64px;
     padding-bottom: 60px;
   }
 
@@ -62,7 +66,7 @@
     width: 170px;
     margin: 0;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 26px;
   }
 
   .contacts-description__address,
@@ -80,7 +84,7 @@
 
   .contacts-description__span {
     display: block;
-    margin-top: 17px;
+    margin-top: 20px;
   }
 
 
@@ -99,7 +103,11 @@
 @media (min-width: @desktop-width) {
   .contacts__wrapper {
     position: relative;
-    margin-top: -191px;
+    margin-top: -193px;
+  }
+
+  .main .contacts {
+    transform: translateY(0);
   }
 
   .main-form .contacts {
@@ -107,7 +115,7 @@
   }
 
   .main-catalog .contacts {
-    margin-top: 278px;
+    margin-top: 281px;
   }
 
   .contacts-description {
@@ -115,7 +123,7 @@
     position: absolute;
     content: "";
     top: 90px;
-    left: -41px;
+    left: -39px;
     width: 570px;
     height: 200px;
     align-items: center;
@@ -123,12 +131,12 @@
   }
 
   .contacts-description__title {
-    margin-left: 76px;
+    margin-left: 74px;
   }
 
   .contacts-description__address {
     text-align: left;
-    margin-right: 84px;
+    margin-right: 86px;
   }
 
   .contacts-description__span {

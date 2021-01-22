@@ -2,7 +2,7 @@
   min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  background-color: @special-grey;
+  background-color: @light-grey;
 }
 
 .slider__wrapper {
@@ -71,7 +71,7 @@
   line-height: 12px;
   text-align: center;
   color: @dark-grey;
-  background-color: @special-grey;
+  background-color: @light-grey;
 }
 
 .slider-inner__span--right {
@@ -143,16 +143,21 @@
 
 @media (min-width: @tablet-width) {
   .slider__title {
-    margin-top: 42px;
+    margin-top: -574px;
     margin-bottom: 61px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .slider__text {
-    width: 708px;
+    margin-top: -450px;
+    width: 702px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .slider-inner {
+    margin-top: -358px;
   }
 
   .slider-inner__text,
@@ -162,7 +167,7 @@
     padding-top: 15px;
     padding-left: 57px;
     font-size: 30px;
-    line-height: 37px;
+    line-height: 38px;
   }
 
   .slider-inner__text--right {
@@ -178,6 +183,7 @@
     margin-top: 13px;
     font-size: 14px;
     line-height: 14px;
+    background-color: @white;
   }
 
   .slider-inner__span--right {
@@ -187,11 +193,11 @@
   }
 
   .slider__summary {
-    margin-top: 63px;
+    margin-top: -317px;
     width: 174px;
     margin-left: 168px;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     text-align: right;
   }
 
@@ -202,7 +208,7 @@
   .slider__slide {
     width: 100%;
     height: 620px;
-    margin-top: 43px;
+    margin-top: -188px;
     margin-left: 0;
   }
 
@@ -213,7 +219,7 @@
 
   .slider-buttons {
     width: 600px;
-    margin: -64px 0 68px 53px;
+    margin: -68px 0 68px 53px;
   }
 
   .slider-buttons__inner {
@@ -296,6 +302,7 @@
 
   .slider-inner {
     width: 367px;
+    margin-top: 20px;
   }
 
   .slider-inner__text,
@@ -311,13 +318,32 @@
   .slider-inner__span,
   .slider-inner__span--right {
     top: 98px;
+    background-color: @light-grey;
   }
 
   .slider__summary {
     width: 327px;
-    margin: 38px 0;
+    margin: 35px 0;
     display: flex;
     justify-content: space-between;
+  }
+
+  .slider__container {
+    z-index: 1;
+    position: relative;
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      top: 167px;
+      right: -69px;
+      width: 395px;
+      height: 462px;
+      background-color: @special-grey;
+      background-position: top right;
+      background-size: contain;
+    }
   }
 
   .slide-image {
@@ -330,6 +356,7 @@
   }
 
   .slider__slide {
+    width: 690px;
     height: 580px;
     margin-top: -27px;
     margin-left: 133px;
