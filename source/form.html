@@ -46,7 +46,7 @@
       <path d="M24 6l-6.75 5.2V.8L24 6z" fill="#000" />
     </symbol>
   </svg>
-  <header class="header">
+  <header class="header header-form">
     <div class="header__wrapper">
       <div class="header-logo">
         <a href="index.html" class="header-logo__link">
@@ -110,19 +110,19 @@
             <legend class="form-selection__title visually-hidden">программы</legend>
             <ul class="form-selection__list">
               <li class="form-selection__radio">
-                <input class="form-selection__radio-input" name="form-radio" id="radio-slim" type="radio" value="slim"
-                  checked>
-                <label class="form-selection__radio-label" for="radio-slim">похудение</label>
+								<input class="form-selection__radio-input" name="form-radio" id="radio-slim" type="checkbox" value="slim"
+									checked>
+									<label class="form-selection__radio-label" for="radio-slim">похудение</label>
               </li>
               <li class="form-selection__radio">
-                <input class="form-selection__radio-input" name="form-radio" id="radio-weight" type="radio"
-                  value="weight">
-                <label class="form-selection__radio-label" for="radio-weight">Набор массы</label>
+								<input class="form-selection__radio-input" name="form-radio" id="radio-weight" type="checkbox"
+									value="weight">
+									<label class="form-selection__radio-label" for="radio-weight">Набор массы</label>
               </li>
               <li class="form-selection__radio">
-                <input class="form-selection__radio-input" name="form-radio" id="radio-advice" type="radio"
-                  value="advice">
-                <label class="form-selection__radio-label" for="radio-advice">Не знаю (Нужен ваш совет)</label>
+								<input class="form-selection__radio-input" name="form-radio" id="radio-advice" type="checkbox"
+									value="advice" disabled>
+									<label class="form-selection__radio-label" for="radio-advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -135,12 +135,13 @@
               <li class="form-selection__item">
                 <label for="selection-mail">E-mail:*</label>
                 <input class="form-selection__mail-input" type="email" name="email" id="selection-mail"
-                  placeholder="kuklachev@gmail.com">
+                  placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form-selection__item">
                 <label for="selection-phone">Телефон:*</label>
-                <input class="form-selection__phone-input" type="tel" name="phone" id="selection-phone"
-                  placeholder="8 (960) 900-60-90" pattern="8\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+								<input class="form-selection__phone-input" type="tel" name="phone" id="selection-phone"
+								title="Используйте формат: 8 (918) 900-60-90"
+								placeholder="8 (960) 900-60-90" pattern="(8\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2})" required>
               </li>
             </ul>
           </fieldset>
@@ -159,20 +160,20 @@
             <ul class="form-selection__list form-selection__list--checkbox">
               <li class="form-selection__checkbox">
                 <input class="form-selection__checkbox-input" type="checkbox" name="sweetener" id="checkbox-sweetener"
-                  checked>
-                <label class="form-selection__checkbox-label" for="checkbox-sweetener">сахарозаменитель</label>
+									checked>
+									<label class="form-selection__checkbox-label" for="checkbox-sweetener">сахарозаменитель</label>
               </li>
               <li class="form-selection__checkbox">
-                <input class="form-selection__checkbox-input" type="checkbox" name="water" id="checkbox-water">
-                <label class="form-selection__checkbox-label" for="checkbox-water">питьевая вода</label>
+								<input class="form-selection__checkbox-input" type="checkbox" name="water" id="checkbox-water">
+                <label class="form-selection__checkbox-label" for="checkbox-water"></label>питьевая вода</label>
               </li>
               <li class="form-selection__checkbox">
-                <input class="form-selection__checkbox-input" type="checkbox" id="checkbox-milk">
-                <label class="form-selection__checkbox-label" for="checkbox-milk">молоко</label>
+								<input class="form-selection__checkbox-input" type="checkbox" id="checkbox-milk">
+                <label class="form-selection__checkbox-label" for="checkbox-milk"></label>молоко</label>
               </li>
               <li class="form-selection__checkbox">
-                <input class="form-selection__checkbox-input" type="checkbox" name="vitamins" id="checkbox-vitamins">
-                <label class="form-selection__checkbox-label" for="checkbox-vitamins">витамины</label>
+								<input class="form-selection__checkbox-input" type="checkbox" name="vitamins" id="checkbox-vitamins">
+                <label class="form-selection__checkbox-label" for="checkbox-vitamins"></label>витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -191,10 +192,12 @@
           <p class="contacts-description__address">ул. Большая<br> Конюшенная, д. 19/8<br><span
               class="contacts-description__span">Санкт-Петербург</span></p>
         </div>
-      </div>
-      <iframe class="contacts__map"
+			</div>
+			<div class="contacts__maps">
+      <!-- <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.151566542474!2d30.321506159407765!3d59.93918113212625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1610209728532!5m2!1sru!2sru"
-        width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+			</div>
     </section>
   </main>
   <footer class="footer">
@@ -206,21 +209,21 @@
         <ul class="footer-social__list">
           <li class="footer-social__item">
             <a href="#" class="footer-social__link">
-              <svg class="footer-social__icon footer-social__icon--vkontakte" width="23" height="16">
+              <svg class="footer-social__icon footer-social__icon--vkontakte" width="23" height="16" aria-label="vkontakte">
                 <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
             <a href="#" class="footer-social__link">
-              <svg class="footer-social__icon footer-social__icon--instagram" width="16" height="16">
+              <svg class="footer-social__icon footer-social__icon--instagram" width="16" height="16" aria-label="instagram">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
             <a href="#" class="footer-social__link">
-              <svg class="footer-social__icon footer-social__icon--facebook" width="22" height="22">
+              <svg class="footer-social__icon footer-social__icon--facebook" width="22" height="22" aria-label="facebook">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
@@ -231,7 +234,7 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright__link"
           aria-label="Логотип HTML Academy">
           <p class="footer-copyright__text">HTML Academy</p>
-          <svg class="footer-copyright__image" width="27" height="34">
+          <svg class="footer-copyright__image" width="27" height="34" aria-label="html-logo">
             <use xlink:href="#html-logo"></use>
           </svg>
         </a>
