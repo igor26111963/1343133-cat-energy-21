@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2">
+  <link rel="preload" href="fonts/oswaldregular.woff2">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -39,8 +41,11 @@
             <img src="img/logo-mobile.svg" alt="Логотип магазина кормов для кошек">
           </picture>
         </a>
-        <button class="header-logo__button" type="button">
+        <button class="header-logo__button header-logo__button-active" type="button">
           <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="header-logo__button--closed header-logo__button--closed-active" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
       </div>
     </div>
@@ -137,22 +142,23 @@
     </section>
     <section class="slider">
       <div class="slider__wrapper wrapper">
-        <h2 class="slider__title">Живой пример</h2>
-        <p class="slider__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему&nbsp;спит по
-          16 часов в день. </p>
-        <div class="slider-inner">
-          <div class="slider-inner__box">
-            <p class="slider-inner__text">5 КГ</p>
-            <span class="slider-inner__span">снижение веса</span>
+        <div class="slider__inner">
+          <h2 class="slider__title">Живой пример</h2>
+          <p class="slider__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему&nbsp;спит по
+            16 часов в день. </p>
+          <div class="slider-box">
+            <div class="slider-box__box">
+              <p class="slider-box__text">5 КГ</p>
+              <span class="slider-box__span">снижение веса</span>
+            </div>
+            <div class="slider-box__box">
+              <p class="slider-box__text slider-box__text--right">60 ДНЕЙ</p>
+              <span class="slider-box__span slider-box__span--right">затрачено времени</span>
+            </div>
           </div>
-          <div class="slider-inner__box">
-            <p class="slider-inner__text slider-inner__text--right">60 ДНЕЙ</p>
-            <span class="slider-inner__span slider-inner__span--right">затрачено времени</span>
-          </div>
+          <p class="slider__summary">Затраты на питание:<span> 15 000 РУБ.</span></p>
         </div>
-        <p class="slider__summary">Затраты на питание:<span> 15 000 РУБ.</span></p>
-
         <div class="slider__container">
           <div class="slider__slide slider__slide--active">
             <picture>
@@ -164,7 +170,7 @@
               <source media="(min-width: 1440px)" srcset="img/slider-desktop.png 1x, img/slider-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet@2x.png 2x">
               <img class="slide-image" src="img/slider-before-mobile.png" srcset="img/slider-before-mobile@2x.png 2x"
-                width="311" height="232" alt="фото толстого кота">
+                width="280" height="232" alt="фото толстого кота">
             </picture>
           </div>
           <div class="slider__slide">
@@ -183,10 +189,11 @@
           <div class="slider-buttons">
             <span class="slider__span slider__span--before">было</span>
             <div class="slider-buttons__inner">
-              <button class="slider-buttons__button slider-buttons__button--active" type="button"><span
-                  class="visually-hidden">Предидущее
+              <button class="slider-buttons__button slider-buttons__button--active" type="button"
+                aria-label="first photo"><span class="visually-hidden">Предыдущее
                   фото</span></button>
-              <button class="slider-buttons__button" type="button"><span class="visually-hidden">Следующее
+              <button class="slider-buttons__button" type="button" aria-label="second photo"><span
+                  class="visually-hidden">Следующее
                   фото</span></button>
             </div>
             <span class="slider__span slider__span--after">стало</span>
@@ -203,9 +210,11 @@
               class="contacts-description__span">Санкт-Петербург</span></p>
         </div>
       </div>
-      <iframe class="contacts__map"
+      <div class="contacts__maps">
+        <!-- <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.151566542474!2d30.321506159407765!3d59.93918113212625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1610209728532!5m2!1sru!2sru"
-        width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -216,21 +225,21 @@
       <div class="footer-social">
         <ul class="footer-social__list">
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+            <a href="#" class="footer-social__link" aria-label="vkontakte">
               <svg class="footer-social__icon footer-social__icon--vkontakte" width="23" height="16">
                 <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+            <a href="#" class="footer-social__link" aria-label="instagram">
               <svg class="footer-social__icon footer-social__icon--instagram" width="16" height="16">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+            <a href="#" class="footer-social__link" aria-label="facebook">
               <svg class="footer-social__icon footer-social__icon--facebook" width="22" height="22">
                 <use xlink:href="#icon-facebook"></use>
               </svg>

@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2">
+  <link rel="preload" href="fonts/oswaldregular.woff2">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -46,7 +48,7 @@
       <path d="M24 6l-6.75 5.2V.8L24 6z" fill="#000" />
     </symbol>
   </svg>
-  <header class="header">
+  <header class="header header-form">
     <div class="header__wrapper">
       <div class="header-logo">
         <a href="index.html" class="header-logo__link">
@@ -135,12 +137,13 @@
               <li class="form-selection__item">
                 <label for="selection-mail">E-mail:*</label>
                 <input class="form-selection__mail-input" type="email" name="email" id="selection-mail"
-                  placeholder="kuklachev@gmail.com">
+                  placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form-selection__item">
                 <label for="selection-phone">Телефон:*</label>
                 <input class="form-selection__phone-input" type="tel" name="phone" id="selection-phone"
-                  placeholder="8 (960) 900-60-90" pattern="8\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                  title="Используйте формат: 8 (918) 900-60-90" placeholder="8 (960) 900-60-90"
+                  pattern="8\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
               </li>
             </ul>
           </fieldset>
@@ -192,9 +195,11 @@
               class="contacts-description__span">Санкт-Петербург</span></p>
         </div>
       </div>
-      <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.151566542474!2d30.321506159407765!3d59.93918113212625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1610209728532!5m2!1sru!2sru"
-        width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="contacts__maps">
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.151566542474!2d30.321506159407765!3d59.93918113212625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1610209728532!5m2!1sru!2sru"
+          width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -205,21 +210,21 @@
       <div class="footer-social">
         <ul class="footer-social__list">
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+            <a href="#" class="footer-social__link" aria-label="vkontakte">
               <svg class="footer-social__icon footer-social__icon--vkontakte" width="23" height="16">
                 <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+            <a href="#" class="footer-social__link" aria-label="instagram">
               <svg class="footer-social__icon footer-social__icon--instagram" width="16" height="16">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
+            <a href="#" class="footer-social__link" aria-label="facebook">
               <svg class="footer-social__icon footer-social__icon--facebook" width="22" height="22">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
