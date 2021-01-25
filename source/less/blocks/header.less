@@ -44,7 +44,7 @@
     position: absolute;
     content: "";
     top: 4px;
-    right: 1px;
+    right: -42px;
     width: 24px;
     height: 1.5px;
     background-color: @black;
@@ -83,6 +83,11 @@
     background-color: @black;
     transform: rotate(-45deg);
   }
+}
+
+.button--hidden,
+.button__closed--hidden {
+  display: none;
 }
 
 .header__nav--closed .header__nav-item {
@@ -191,8 +196,8 @@
     margin: 52px auto 0;
   }
 
-  .header-catalog,
-  .header-form {
+  .header--catalog,
+  .header--form {
     margin: 54px auto 0;
   }
 

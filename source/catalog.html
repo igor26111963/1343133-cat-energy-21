@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldmedium.woff2">
-  <link rel="preload" href="fonts/oswaldregular.woff2">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -30,7 +30,7 @@
         d="M13.64.02L13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24z" />
     </symbol>
   </svg>
-  <header class="header header-catalog">
+  <header class="header header--catalog">
     <div class="header__wrapper">
       <div class="header__logo">
         <a href="index.html" class="header__logo-link">
@@ -40,11 +40,12 @@
             <img src="img/logo-mobile.svg" alt="Логотип магазина кормов для кошек">
           </picture>
         </a>
-        <!--Кнопки будут видны если удалить класс visually-hidden-->
-        <button class="header__logo-button visually-hidden" type="button">
+        <!-- Кнопки будут видны если удалить правило "display: none" для button--hidden и
+        button__closed--hidden -->
+        <button class="header__logo-button button--hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="header__logo-button--closed visually-hidden" type="button">
+        <button class="header__logo-button--closed button__closed--hidden" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
       </div>
@@ -66,7 +67,7 @@
       </div>
     </nav>
   </header>
-  <main class="main main--catalog">
+  <main class="main catalog--main">
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <div class="catalog__box">
@@ -74,6 +75,8 @@
           <div class="catalog__item">
             <a class="catalog__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog-1.webp 1x, img/catalog-1@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog-1.webp 1x, img/catalog-1@2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog-1-mobile.webp 1x, img/catalog-1-mobile@2x.webp 2x">
@@ -110,6 +113,8 @@
           <div class="catalog__item">
             <a class="catalog__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog-2.webp 1x, img/catalog-2@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog-2.webp 1x, img/catalog-2@2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog-2-mobile.webp 1x, img/catalog-2-mobile@2x.webp 2x">
@@ -145,6 +150,8 @@
           <div class="catalog__item">
             <a class="catalog__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog-3.webp 1x, img/catalog-3@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog-3.webp 1x, img/catalog-3@2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog-3-mobile.webp 1x, img/catalog-3-mobile@2x.webp 2x">
@@ -181,6 +188,8 @@
           <div class="catalog__item">
             <a class="catalog__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog-4.webp 1x, img/catalog-4@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog-4.webp 1x, img/catalog-4@2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog-4-mobile.webp 1x, img/catalog-4-mobile@2x.webp 2x">
@@ -216,6 +225,8 @@
           <div class="catalog__item">
             <a class="catalog__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog-5.webp 1x, img/catalog-5@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog-5.webp 1x, img/catalog-5@2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog-5-mobile.webp 1x, img/catalog-5-mobile@2x.webp 2x">
@@ -252,6 +263,8 @@
           <div class="catalog__item">
             <a class="catalog__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog-6.webp 1x, img/catalog-6@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog-6.webp 1x, img/catalog-6@2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog-6-mobile.webp 1x, img/catalog-6-mobile@2x.webp 2x">
@@ -287,6 +300,8 @@
           <div class="catalog__item">
             <a class="catalog__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/catalog-7.webp 1x, img/catalog-7@2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog-7-mobile.webp 1x, img/catalog-7-mobile@2x.webp 2x">
@@ -343,7 +358,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="addition__button" type="button">Заказать</a>
+              <a class="addition__button" href="form.html">Заказать</a>
             </li>
             <li class="addition__items">
               <div class="addition__box">
@@ -355,7 +370,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="addition__button" type="button">Заказать</a>
+              <a class="addition__button" href="form.html">Заказать</a>
             </li>
             <li class="addition__items">
               <div class="addition__box">
@@ -367,7 +382,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="addition__button" type="button">Заказать</a>
+              <a class="addition__button" href="form.html">Заказать</a>
             </li>
             <li class="addition__items">
               <div class="addition__box">
@@ -379,7 +394,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="addition__button" type="button">Заказать</a>
+              <a class="addition__button" href="form.html">Заказать</a>
             </li>
           </ul>
           <div class="addition__promo">
@@ -389,7 +404,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts catalog-contacts">
+    <section class="contacts contacts--catalog">
       <div class="contacts__wrapper wrapper">
         <div class="contacts__description">
           <h4 class="contacts__description-title">Приглашаем<br><span class="contacts__description-title--span">к
@@ -399,9 +414,9 @@
         </div>
       </div>
       <div class="contacts__maps">
-        <!-- <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.151566542474!2d30.321506159407765!3d59.93918113212625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1610209728532!5m2!1sru!2sru"
-        width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.151566542474!2d30.321506159407765!3d59.93918113212625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1610209728532!5m2!1sru!2sru"
+          width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
   </main>

@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldmedium.woff2">
-  <link rel="preload" href="fonts/oswaldregular.woff2">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -41,11 +41,12 @@
             <img src="img/logo-mobile.svg" alt="Логотип магазина кормов для кошек">
           </picture>
         </a>
-        <!--Кнопки будут видны если удалить класс visually-hidden-->
-        <button class="header__logo-button visually-hidden" type="button">
+        <!-- Кнопки будут видны если удалить правило "display: none" для button--hidden и
+        button__closed--hidden -->
+        <button class="header__logo-button button--hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="header__logo-button--closed visually-hidden" type="button">
+        <button class="header__logo-button--closed button__closed--hidden" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
       </div>
@@ -203,7 +204,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts main-contacts">
+    <section class="contacts contacts--main">
       <div class="contacts__wrapper wrapper">
         <div class="contacts__description">
           <h4 class="contacts__description-title">Приглашаем<br><span class="contacts__description-title--span">к
@@ -213,9 +214,9 @@
         </div>
       </div>
       <div class="contacts__maps">
-        <!-- <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.151566542474!2d30.321506159407765!3d59.93918113212625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1610209728532!5m2!1sru!2sru"
-        width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.151566542474!2d30.321506159407765!3d59.93918113212625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1610209728532!5m2!1sru!2sru"
+          width="600" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
   </main>
