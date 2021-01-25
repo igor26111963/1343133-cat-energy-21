@@ -1,10 +1,10 @@
-.contacts-description {
+.contacts__description {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.contacts-description__title {
+.contacts__description-title {
   width: 138px;
   margin: 30px 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -15,7 +15,7 @@
   color: @special-black;
 }
 
-.contacts-description__address {
+.contacts__description-address {
   width: 138px;
   margin-top: 28px;
   font-family: "Arial", "Helvetica", sans-serif;
@@ -46,11 +46,11 @@
   margin: 0 auto;
 }
 
-.main-form .contacts {
+.form-contacts {
   background-color: @light-grey;
 }
 
-.main-catalog .contacts {
+.catalog-contacts {
   background-color: @light-grey;
 }
 
@@ -59,41 +59,41 @@
     background-color: @light-grey;
   }
 
-  .main .contacts {
+  .main-contacts {
     background-color: @white;
   }
 
-  .main-form .contacts {
+  .form-contacts {
     margin-top: 75px;
   }
 
-  .contacts-description {
+  .contacts__description {
     margin: 0 43px 0 40px;
     padding-top: 64px;
     padding-bottom: 60px;
   }
 
-  .contacts-description__title {
+  .contacts__description-title {
     width: 170px;
     margin: 0;
     font-size: 20px;
     line-height: 26px;
   }
 
-  .contacts-description__address,
-  .contacts-description__span {
+  .contacts__description-address,
+  .contacts__description-span {
     padding: 0;
     width: 160px;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .contacts-description__address {
+  .contacts__description-address {
     margin: 0;
     text-align: right;
   }
 
-  .contacts-description__span {
+  .contacts__description-span {
     display: block;
     margin-top: 20px;
   }
@@ -120,10 +120,6 @@
     margin: 0 auto;
     transform: translateX(0);
   }
-
-  .contacts__form {
-    background-color: @light-grey;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -132,20 +128,20 @@
     margin-top: -193px;
   }
 
-  .main .contacts {
+  .main-contacts {
     margin-top: 3px;
     transform: translateY(0);
   }
 
-  .main-form .contacts {
+  .form-contacts {
     margin-top: 280px;
   }
 
-  .main-catalog .contacts {
+  .catalog-contacts {
     margin-top: 281px;
   }
 
-  .contacts-description {
+  .contacts__description {
     z-index: 1;
     position: absolute;
     content: "";
@@ -157,16 +153,16 @@
     background-color: @white;
   }
 
-  .contacts-description__title {
+  .contacts__description-title {
     margin-left: 74px;
   }
 
-  .contacts-description__address {
+  .contacts__description-address {
     text-align: left;
     margin-right: 86px;
   }
 
-  .contacts-description__span {
+  .contacts__description-span {
     margin-top: 19px;
   }
 

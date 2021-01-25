@@ -33,33 +33,35 @@
   </svg>
   <header class="header">
     <div class="header__wrapper">
-      <div class="header-logo">
-        <a class="header-logo__link">
+      <div class="header__logo">
+        <a class="header__logo-link">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img src="img/logo-mobile.svg" alt="Логотип магазина кормов для кошек">
           </picture>
         </a>
-        <button class="header-logo__button header-logo__button-active" type="button">
+        <!--Кнопки будут видны если удалить класс visually-hidden-->
+        <button class="header__logo-button visually-hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="header-logo__button--closed header-logo__button--closed-active" type="button">
+        <button class="header__logo-button--closed visually-hidden" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
       </div>
     </div>
-    <nav class="header-nav header-nav--index header-nav--opened">
-      <div class="header-nav__wrapper">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--index header-nav__link--active">главная</a>
+    <!-- При необходимости скрыть меню необходимо поменять header__nav--opened на header__nav--closed-->
+    <nav class="header__nav header__nav--index header__nav--opened">
+      <div class="header__nav-wrapper">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--index header__nav-link--active">главная</a>
           </li>
-          <li class="header-nav__item">
-            <a href="catalog.html" class="header-nav__link header-nav__link--index">каталог продукции</a>
+          <li class="header__nav-item">
+            <a href="catalog.html" class="header__nav-link header__nav-link--index">каталог продукции</a>
           </li>
-          <li class="header-nav__item">
-            <a href="form.html" class="header-nav__link header-nav__link--index">подбор программы</a>
+          <li class="header__nav-item">
+            <a href="form.html" class="header__nav-link header__nav-link--index">подбор программы</a>
           </li>
         </ul>
       </div>
@@ -68,9 +70,9 @@
   <main class="main">
     <section class="promo">
       <div class="promo__wrapper wrapper">
-        <div class="promo-description">
-          <h1 class="promo-description__title">Функциональное<br> питание для котов</h1>
-          <p class="promo-description__text">Занялся собой? Займись котом!</p>
+        <div class="promo__description">
+          <h1 class="promo__description-title">Функциональное<br> питание для котов</h1>
+          <p class="promo__description-text">Занялся собой? Займись котом!</p>
         </div>
         <a href="form.html" class="promo__link">подобрать программу</a>
         <div class="promo__images">
@@ -147,14 +149,14 @@
           <p class="slider__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему&nbsp;спит по
             16 часов в день. </p>
-          <div class="slider-box">
-            <div class="slider-box__info">
-              <p class="slider-box__text">5 КГ</p>
-              <span class="slider-box__span">снижение веса</span>
+          <div class="slider__box">
+            <div class="slider__box-info">
+              <p class="slider__box-text">5 КГ</p>
+              <span class="slider__box-span">снижение веса</span>
             </div>
-            <div class="slider-box__info">
-              <p class="slider-box__text slider-box__text--right">60 ДНЕЙ</p>
-              <span class="slider-box__span slider-box__span--right">затрачено времени</span>
+            <div class="slider__box-info">
+              <p class="slider__box-text slider__box-text--right">60 ДНЕЙ</p>
+              <span class="slider__box-span slider__box-span--right">затрачено времени</span>
             </div>
           </div>
           <p class="slider__summary">Затраты на питание:<span> 15 000 РУБ.</span></p>
@@ -169,7 +171,7 @@
               <source type="image/webp" srcset="img/slider-before-mobile.webp 1x, img/slider-before-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/slider-desktop.png 1x, img/slider-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet@2x.png 2x">
-              <img class="slide-image" src="img/slider-before-mobile.png" srcset="img/slider-before-mobile@2x.png 2x"
+              <img class="slider__image" src="img/slider-before-mobile.png" srcset="img/slider-before-mobile@2x.png 2x"
                 width="311" height="232" alt="фото толстого кота">
             </picture>
           </div>
@@ -182,17 +184,17 @@
               <source type="image/webp" srcset="img/slider-after-mobile.webp 1x, img/slider-after-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/slider-desktop.png 1x, img/slider-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet@2x.png 2x">
-              <img src="img/slider-after-mobile.png" srcset="img/slider-after-mobile@2x.png 2x" width="251" height="240"
-                alt="фото худого кота">
+              <img class="slider__image" src="img/slider-after-mobile.png" srcset="img/slider-after-mobile@2x.png 2x"
+                width="251" height="240" alt="фото худого кота">
             </picture>
           </div>
-          <div class="slider-buttons">
+          <div class="slider__buttons">
             <span class="slider__span slider__span--before">было</span>
-            <div class="slider-buttons__inner">
-              <button class="slider-buttons__button slider-buttons__button--active" type="button"
+            <div class="slider__buttons-inner">
+              <button class="slider__buttons-button slider__buttons-button--active" type="button"
                 aria-label="first photo"><span class="visually-hidden">Предыдущее
                   фото</span></button>
-              <button class="slider-buttons__button" type="button" aria-label="second photo"><span
+              <button class="slider__buttons-button" type="button" aria-label="second photo"><span
                   class="visually-hidden">Следующее
                   фото</span></button>
             </div>
@@ -201,13 +203,13 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts main-contacts">
       <div class="contacts__wrapper wrapper">
-        <div class="contacts-description">
-          <h4 class="contacts-description__title">Приглашаем<br><span class="contacts-description__title-span">к
+        <div class="contacts__description">
+          <h4 class="contacts__description-title">Приглашаем<br><span class="contacts__description-title--span">к
               сотрудничеству<br>дилеров!</span></h4>
-          <p class="contacts-description__address">ул. Большая<br> Конюшенная, д. 19/8<br><span
-              class="contacts-description__span">Санкт-Петербург</span></p>
+          <p class="contacts__description-address">ул. Большая<br> Конюшенная, д. 19/8<br><span
+              class="contacts__description-span">Санкт-Петербург</span></p>
         </div>
       </div>
       <div class="contacts__maps">
@@ -222,36 +224,36 @@
       <a class="footer__logo" href="index.html">
         <img src="img/footer-logo.svg" alt="Логотип магазина кормов для кошек">
       </a>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link" aria-label="vkontakte">
-              <svg class="footer-social__icon footer-social__icon--vkontakte" width="23" height="16">
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="vkontakte">
+              <svg class="footer__social-icon footer__social-icon--vkontakte" width="23" height="16">
                 <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link" aria-label="instagram">
-              <svg class="footer-social__icon footer-social__icon--instagram" width="16" height="16">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="instagram">
+              <svg class="footer__social-icon footer__social-icon--instagram" width="16" height="16">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link" aria-label="facebook">
-              <svg class="footer-social__icon footer-social__icon--facebook" width="22" height="22">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="facebook">
+              <svg class="footer__social-icon footer__social-icon--facebook" width="22" height="22">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright__link"
+      <div class="footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright-link"
           aria-label="Логотип HTML Academy">
-          <p class="footer-copyright__text">HTML Academy</p>
-          <svg class="footer-copyright__image" width="27" height="34">
+          <p class="footer__copyright-text">HTML Academy</p>
+          <svg class="footer__copyright-image" width="27" height="34">
             <use xlink:href="#html-logo"></use>
           </svg>
         </a>

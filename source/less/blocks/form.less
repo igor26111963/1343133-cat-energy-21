@@ -26,7 +26,7 @@
   color: @black;
 }
 
-.form-selection__title {
+.form__selection-title {
   display: inline-block;
   position: relative;
   padding: 0;
@@ -56,13 +56,13 @@
   }
 }
 
-.form-selection__list {
+.form__selection-list {
   width: 280px;
   padding: 0;
   margin: 3px auto;
 }
 
-.form-selection__items {
+.form__selection-items {
   margin: 0;
   padding: 0;
   border: none;
@@ -85,7 +85,7 @@
   }
 }
 
-.form-selection__item {
+.form__selection-item {
   width: 280px;
   display: flex;
   white-space: nowrap;
@@ -95,11 +95,11 @@
   list-style: none;
 }
 
-.form-selection__item + .form-selection__item {
+.form__selection-item + .form__selection-item {
   padding-top: 14px;
 }
 
-.form-selection__text {
+.form__selection-text {
   width: 280px;
   margin-left: 12px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -125,32 +125,32 @@
   }
 }
 
-.form-selection__radio {
+.form__selection-radio {
   list-style: none;
 }
 
-.form-selection__radio + .form-selection__radio {
+.form__selection-radio + .form__selection-radio {
   margin-top: 25px;
 }
 
-.form-selection__radio-input {
+.form__selection-radio-input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.form-selection__radio-label,
-.form-selection__checkbox-label {
+.form__selection-radio-label,
+.form__selection-checkbox-label {
   text-transform: uppercase;
   color: @dark;
 }
 
-.form-selection__radio-input + .form-selection__radio-label {
+.form__selection-radio-input + .form__selection-radio-label {
   position: relative;
   padding-left: 45px;
 }
 
-.form-selection__radio-input + .form-selection__radio-label::before {
+.form__selection-radio-input + .form__selection-radio-label::before {
   position: absolute;
   content: "";
   top: -3px;
@@ -161,11 +161,11 @@
   border-radius: 50%;
 }
 
-.form-selection__radio-input:hover + .form-selection__radio-label::before {
+.form__selection-radio-input:hover + .form__selection-radio-label::before {
   border: 1px solid @grey-radio-active;
 }
 
-.form-selection__radio-input:checked + .form-selection__radio-label::after {
+.form__selection-radio-input:checked + .form__selection-radio-label::after {
   position: absolute;
   content: "";
   top: 5px;
@@ -176,26 +176,26 @@
   border-radius: 50%;
 }
 
-.form-selection__radio-input:focus + .form-selection__radio-label::before {
-  outline:  1px auto @black;
+.form__selection-radio-input:focus + .form__selection-radio-label::before {
+  outline: 1px auto @black;
 }
 
-.form-selection__radio-input:disabled + .form-selection__radio-label {
+.form__selection-radio-input:disabled + .form__selection-radio-label {
   opacity: 0.3;
 }
 
-.form-selection__title--user {
+.form__selection-title--user {
   padding-top: 20px;
   width: 185px;
 }
 
-.form-selection__list--user {
+.form__selection-list--user {
   margin-top: 34px;
   margin-bottom: 9px;
 }
 
-.form-selection__mail-input,
-.form-selection__phone-input {
+.form__selection-mail-input,
+.form__selection-phone-input {
   width: 280px;
   margin-left: 10px;
   padding: 13px 15px;
@@ -209,7 +209,7 @@
   border: 1px solid @border-grey;
 }
 
-.form-selection__mail-input {
+.form__selection-mail-input {
   background-image: url("../img/icon-email.svg");
   background-repeat: no-repeat;
   background-position: 93% center;
@@ -233,7 +233,7 @@
   }
 }
 
-.form-selection__phone-input {
+.form__selection-phone-input {
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 93% center;
@@ -257,7 +257,7 @@
   }
 }
 
-.form-selection__comment {
+.form__selection-comment {
   padding-top: 10px;
   margin-top: 36px;
   resize: none;
@@ -281,34 +281,34 @@
   }
 }
 
-.form-selection__list--checkbox {
+.form__selection-list--checkbox {
   display: grid;
   grid-row-gap: 9px;
   padding-top: 35px;
   padding-bottom: 13px;
 }
 
-.form-selection__checkbox {
+.form__selection-checkbox {
   position: relative;
   text-transform: uppercase;
   color: @black;
   list-style: none;
 }
 
-.form-selection__checkbox + .form-selection__checkbox {
+.form__selection-checkbox + .form__selection-checkbox {
   margin-top: 15px;
 }
 
-.form-selection__checkbox-input {
+.form__selection-checkbox-input {
   opacity: 0;
 }
 
-.form-selection__checkbox-input + .form-selection__checkbox-label {
+.form__selection-checkbox-input + .form__selection-checkbox-label {
   position: relative;
   padding-left: 21px;
 }
 
-.form-selection__checkbox-input + .form-selection__checkbox-label::before {
+.form__selection-checkbox-input + .form__selection-checkbox-label::before {
   position: absolute;
   content: "";
   top: -1px;
@@ -318,11 +318,11 @@
   border: 1px solid @grey-radio;
 }
 
-.form-selection__checkbox-input:hover + .form-selection__checkbox-label::before {
+.form__selection-checkbox-input:hover + .form__selection-checkbox-label::before {
   border: 1px solid @grey-radio-active;
 }
 
-.form-selection__checkbox-input:checked + .form-selection__checkbox-label::after {
+.form__selection-checkbox-input:checked + .form__selection-checkbox-label::after {
   position: absolute;
   content: "";
   top: 6px;
@@ -334,23 +334,23 @@
   transform: rotate(-45deg);
 }
 
-.form-selection__checkbox-input:focus + .form-selection__checkbox-label::before {
+.form__selection-checkbox-input:focus + .form__selection-checkbox-label::before {
   outline: 1px auto @black;
 }
 
-.form-selection__checkbox-input:disabled + .form-selection__checkbox-label {
+.form__selection-checkbox-input:disabled + .form__selection-checkbox-label {
   opacity: 0.3;
 }
 
-.form-selection__checkbox-input:hover + .form-selection__checkbox-button {
+.form__selection-checkbox-input:hover + .form__selection-checkbox-button {
   border: 1px solid @grey-radio-active;
 }
 
-.form-selection__checkbox-input:focus + .form-selection__checkbox-button {
-  border: 1px solid @black
+.form__selection-checkbox-input:focus + .form__selection-checkbox-button {
+  border: 1px solid @black;
 }
 
-.form-selection__checkbox-button{
+.form__selection-checkbox-button {
   margin-left: -45px;
   margin-right: 16px;
   margin-top: -5px;
@@ -358,7 +358,7 @@
   padding: 2px 14px;
 }
 
-.form-selection__checkbox-input:checked + .form-selection__checkbox-button::after {
+.form__selection-checkbox-input:checked + .form__selection-checkbox-button::after {
   position: absolute;
   content: "";
   top: 4px;
@@ -370,11 +370,11 @@
   transform: rotate(-45deg);
 }
 
-.form-selection__checkbox-input:disabled + .form-selection__checkbox-button {
+.form__selection-checkbox-input:disabled + .form__selection-checkbox-button {
   opacity: 0.3;
 }
 
-.form-selection__button {
+.form__button {
   margin-top: 25px;
   width: 280px;
   display: block;
@@ -408,7 +408,7 @@
   color: @black;
 }
 
-.form-selection__wrapper--border {
+.form__selection-wrapper--border {
   position: relative;
 
   &::before {
@@ -438,15 +438,15 @@
     padding-left: 41px;
   }
 
-  .form-selection__wrapper {
+  .form__selection-wrapper {
     width: 708px;
     margin: 0 auto;
     padding-top: 0;
     padding-left: 41px;
   }
 
-  .form-selection__wrapper--border::after,
-  .form-selection__wrapper--border::before {
+  .form__selection-wrapper--border::after,
+  .form__selection-wrapper--border::before {
     display: none;
   }
 
@@ -461,7 +461,7 @@
     line-height: 30px;
   }
 
-  .form-selection__items {
+  .form__selection-items {
     padding-top: 10px;
     padding-bottom: 42px;
 
@@ -474,51 +474,51 @@
     }
   }
 
-  .form-selection__list {
+  .form__selection-list {
     margin: 0;
     width: 630px;
   }
 
-  .form-selection__item {
+  .form__selection-item {
     width: 630px;
   }
 
-  .form-selection__item + .form-selection__item {
+  .form__selection-item + .form__selection-item {
     padding-top: 20px;
   }
 
-  .form-selection__radio-input + .form-selection__radio-label {
+  .form__selection-radio-input + .form__selection-radio-label {
     padding-left: 71px;
   }
 
-  .form-selection__radio-input + .form-selection__radio-label::before {
+  .form__selection-radio-input + .form__selection-radio-label::before {
     top: -8px;
     left: 10px;
     width: 40px;
     height: 40px;
   }
 
-  .form-selection__radio-input:checked + .form-selection__radio-label::after {
+  .form__selection-radio-input:checked + .form__selection-radio-label::after {
     top: 4px;
     left: 21px;
     width: 18px;
     height: 18px;
   }
 
-  .form-selection__items--data {
+  .form__selection-items--data {
     width: 634px;
     margin-top: 50px;
     margin-bottom: 14px;
   }
 
-  .form-selection__item,
-  .form-selection__text,
-  .form-selection__radio {
+  .form__selection-item,
+  .form__selection-text,
+  .form__selection-radio {
     font-size: 20px;
     line-height: 30px;
   }
 
-  .form-selection__text {
+  .form__selection-text {
     margin-left: 15px;
     width: 634px;
     padding: 10px 20px;
@@ -526,24 +526,24 @@
     line-height: 30px;
   }
 
-  .form-selection__radio {
+  .form__selection-radio {
     padding-top: 31px;
     padding-left: 16px;
   }
 
-  .form-selection__radio + .form-selection__radio {
+  .form__selection-radio + .form__selection-radio {
     margin-top: -8px;
   }
 
-  .form-selection__radio--input {
+  .form__selection-radio--input {
     margin: 0 28px;
   }
 
-  .form-selection__cats + .form-selection__cats {
+  .form__selection-cats + .form__selection-cats {
     margin-top: 20px;
   }
 
-  .form-selection__title {
+  .form__selection-title {
     font-size: 36px;
     line-height: 36px;
 
@@ -568,8 +568,8 @@
     }
   }
 
-  .form-selection__mail-input,
-  .form-selection__phone-input {
+  .form__selection-mail-input,
+  .form__selection-phone-input {
     width: 634px;
     margin-left: 15px;
     padding: 10px 20px;
@@ -579,22 +579,22 @@
     line-height: 30px;
   }
 
-  .form-selection__mail-input {
+  .form__selection-mail-input {
     margin-left: 20px;
     background-position: 97% center;
   }
 
-  .form-selection__phone-input {
+  .form__selection-phone-input {
     margin-left: 13px;
     background-position: 97% center;
   }
 
-  .form-selection__list--user {
+  .form__selection-list--user {
     margin-top: 65px;
     margin-bottom: 10px;
   }
 
-  .form-selection__comment {
+  .form__selection-comment {
     margin-top: 65px;
     text-align: left;
     padding-left: 17px;
@@ -605,12 +605,12 @@
     line-height: 30px;
   }
 
-  .form-selection__items--checkbox {
+  .form__selection-items--checkbox {
     margin-top: 22px;
     padding-bottom: 0;
   }
 
-  .form-selection__list--checkbox {
+  .form__selection-list--checkbox {
     margin: 0;
     padding-top: 53px;
     padding-right: 63px;
@@ -620,36 +620,36 @@
     justify-content: space-between;
   }
 
-  .form-selection__checkbox {
+  .form__selection-checkbox {
     width: 221px;
     margin-bottom: 33px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  .form-selection__checkbox + .form-selection__checkbox {
+  .form__selection-checkbox + .form__selection-checkbox {
     margin-top: 0;
   }
 
-  .form-selection__checkbox-input + .form-selection__checkbox-label {
+  .form__selection-checkbox-input + .form__selection-checkbox-label {
     padding-left: 33px;
   }
 
-  .form-selection__checkbox-input + .form-selection__checkbox-label::before {
+  .form__selection-checkbox-input + .form__selection-checkbox-label::before {
     top: -6px;
     left: -26px;
     width: 38px;
     height: 37px;
   }
 
-  .form-selection__checkbox-input:checked + .form-selection__checkbox-label::after {
+  .form__selection-checkbox-input:checked + .form__selection-checkbox-label::after {
     top: 4px;
     left: -15px;
     width: 16px;
     height: 10px;
   }
 
-  .form-selection__button {
+  .form__button {
     margin-top: 13px;
     display: inline-block;
     padding: 14px 45px;
@@ -679,7 +679,7 @@
     padding-top: 9px;
   }
 
-  .form-selection__wrapper {
+  .form__selection-wrapper {
     width: 1220px;
     padding: 0;
 
@@ -697,7 +697,7 @@
     margin: 54px 0 66px;
   }
 
-  .form-selection {
+  .form__selection {
     width: 1220px;
     margin: 0 auto;
     display: flex;
@@ -705,12 +705,12 @@
     justify-content: space-between;
   }
 
-  .form-selection__item,
-  .form-selection__list {
+  .form__selection-item,
+  .form__selection-list {
     width: 570px;
   }
 
-  .form-selection__items {
+  .form__selection-items {
     max-width: 570px;
     padding: 0;
 
@@ -734,55 +734,55 @@
     }
   }
 
-  .form-selection__radio {
+  .form__selection-radio {
     width: 570px;
     padding-left: 15px;
   }
 
-  .form-selection__radio-input + .form-selection__radio-label {
+  .form__selection-radio-input + .form__selection-radio-label {
     padding-left: 72px;
   }
 
-  .form-selection__radio-input:checked + .form-selection__radio-label::after {
+  .form__selection-radio-input:checked + .form__selection-radio-label::after {
     top: 5px;
-    left: 22px;
+    left: 23px;
   }
 
-  .form-selection__radio-input + .form-selection__radio-label::before {
+  .form__selection-radio-input + .form__selection-radio-label::before {
     top: -7px;
     left: 11px;
   }
 
-  .form-selection__title::after,
-  .form-selection__title::before {
+  .form__selection-title::after,
+  .form__selection-title::before {
     top: 73%;
   }
 
-  .form-selection__list--user {
+  .form__selection-list--user {
     margin-top: 55px;
     margin-bottom: 8px;
   }
 
-  .form-selection__mail-input {
+  .form__selection-mail-input {
     margin-left: 23px;
     padding: 9px 16px;
     background-position: 96% center;
   }
 
-  .form-selection__phone-input {
+  .form__selection-phone-input {
     margin-left: 15px;
     padding: 9px 16px;
     background-position: 96% center;
   }
 
-  .form-selection__comment {
+  .form__selection-comment {
     width: 1220px;
     margin-top: 77px;
     margin-bottom: 47px;
   }
 
-  .form-selection__list--user,
-  .form-selection__list--checkbox {
+  .form__selection-list--user,
+  .form__selection-list--checkbox {
     width: 1220px;
     display: flex;
     flex-wrap: wrap;
@@ -790,24 +790,25 @@
     align-items: baseline;
   }
 
-  .form-selection__list--checkbox {
+  .form__selection-list--checkbox {
     padding-top: 64px;
     padding-right: 23px;
   }
 
-  .form-selection__checkbox:nth-of-type(2n) {
+  .form__selection-checkbox:nth-of-type(2n) {
     margin-left: 0;
     margin-bottom: 29px;
   }
 
-  .form-selection__checkbox {
+  .form__selection-checkbox {
     margin: 0;
   }
-  .form-selection__checkbox-input:checked + .form-selection__checkbox-label::after {
+
+  .form__selection-checkbox-input:checked + .form__selection-checkbox-label::after {
     left: -13px;
   }
 
-  .form-selection__button {
+  .form__button {
     width: 570px;
     margin-top: 17px;
     display: inline-block;

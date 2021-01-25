@@ -32,39 +32,41 @@
   </svg>
   <header class="header header-catalog">
     <div class="header__wrapper">
-      <div class="header-logo">
-        <a href="index.html" class="header-logo__link">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo-link">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img src="img/logo-mobile.svg" alt="Логотип магазина кормов для кошек">
           </picture>
         </a>
-        <button class="header-logo__button header-logo__button-active" type="button">
+        <!--Кнопки будут видны если удалить класс visually-hidden-->
+        <button class="header__logo-button visually-hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="header-logo__button--closed header-logo__button--closed-active" type="button">
+        <button class="header__logo-button--closed visually-hidden" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
       </div>
     </div>
-    <nav class="header-nav header-nav--opened">
-      <div class="header-nav__wrapper">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="index.html" class="header-nav__link">главная</a>
+    <!-- При необходимости скрыть меню необходимо поменять header__nav--opened на header__nav--closed-->
+    <nav class="header__nav header__nav--opened">
+      <div class="header__nav-wrapper">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="index.html" class="header__nav-link">главная</a>
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--active">каталог продукции</a>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--active">каталог продукции</a>
           </li>
-          <li class="header-nav__item">
-            <a href="form.html" class="header-nav__link">подбор программы</a>
+          <li class="header__nav-item">
+            <a href="form.html" class="header__nav-link">подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="main-catalog">
+  <main class="main main--catalog">
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <div class="catalog__box">
@@ -380,21 +382,20 @@
               <a class="addition__button" type="button">Заказать</a>
             </li>
           </ul>
-          <div class="addition-promo">
+          <div class="addition__promo">
             <img src="img/icon-gift.svg" alt="Корзина для покупок">
-            <p class="addition-promo__text">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+            <p class="addition__promo-text">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts catalog-contacts">
       <div class="contacts__wrapper wrapper">
-        <div class="contacts-description">
-          <h4 class="contacts-description__title">приглашаем<br> к сотрудничеству
-            <br> дилеров!
-          </h4>
-          <p class="contacts-description__address">ул. Большая<br> Конюшенная, д. 19/8<br><span
-              class="contacts-description__span">Санкт-Петербург</span></p>
+        <div class="contacts__description">
+          <h4 class="contacts__description-title">Приглашаем<br><span class="contacts__description-title--span">к
+              сотрудничеству<br>дилеров!</span></h4>
+          <p class="contacts__description-address">ул. Большая<br> Конюшенная, д. 19/8<br><span
+              class="contacts__description-span">Санкт-Петербург</span></p>
         </div>
       </div>
       <div class="contacts__maps">
@@ -409,36 +410,36 @@
       <a class="footer__logo" href="index.html">
         <img src="img/footer-logo.svg" alt="Логотип магазина кормов для кошек">
       </a>
-      <div class="footer-social">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link" aria-label="vkontakte">
-              <svg class="footer-social__icon footer-social__icon--vkontakte" width="23" height="16">
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="vkontakte">
+              <svg class="footer__social-icon footer__social-icon--vkontakte" width="23" height="16">
                 <use xlink:href="#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link" aria-label="instagram">
-              <svg class="footer-social__icon footer-social__icon--instagram" width="16" height="16">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="instagram">
+              <svg class="footer__social-icon footer__social-icon--instagram" width="16" height="16">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link" aria-label="facebook">
-              <svg class="footer-social__icon footer-social__icon--facebook" width="22" height="22">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link" aria-label="facebook">
+              <svg class="footer__social-icon footer__social-icon--facebook" width="22" height="22">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright__link"
+      <div class="footer__copyright">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright-link"
           aria-label="Логотип HTML Academy">
-          <p class="footer-copyright__text">HTML Academy</p>
-          <svg class="footer-copyright__image" width="27" height="34">
+          <p class="footer__copyright-text">HTML Academy</p>
+          <svg class="footer__copyright-image" width="27" height="34">
             <use xlink:href="#html-logo"></use>
           </svg>
         </a>
