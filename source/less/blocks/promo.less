@@ -6,11 +6,14 @@
 }
 
 .promo__wrapper {
-  position: relative;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (max-width: @tablet-width) {
+    position: relative;
+  }
 
   &::after {
     z-index: -1;
@@ -27,23 +30,23 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-mobile@2x.png");
-      background-size: 640px auto;
+      background-size: 320px auto;
     }
   }
 }
 
-.promo-description {
+.promo__description {
   text-align: center;
 }
 
-.promo-description__title {
+.promo__description-title {
   font-weight: 400;
   margin: 26px 0 0;
   font-size: 36px;
   line-height: 36px;
 }
 
-.promo-description__text {
+.promo__description-text {
   margin: 26px 3px 29px;
   font-size: 14px;
   line-height: 14px;
@@ -78,7 +81,6 @@
   }
 
   .promo__wrapper {
-    position: static;
     margin-top: 0;
     padding: 0 30px;
 
@@ -87,20 +89,20 @@
     }
   }
 
-  .promo-description {
+  .promo__description {
     text-align: left;
     padding-left: 58px;
     padding-top: 0;
   }
 
-  .promo-description__title {
+  .promo__description-title {
     margin: 0;
     margin-top: 38px;
     font-size: 60px;
     line-height: 60px;
   }
 
-  .promo-description__text {
+  .promo__description-text {
     margin: 0;
     margin-top: 40px;
     font-size: 20px;
@@ -108,7 +110,8 @@
   }
 
   .promo__image {
-    transform: translate(-30px, -588px);
+    transform: translate(0, -588px);
+    margin-left: -30px;
   }
 
   .promo__link {
@@ -150,16 +153,17 @@
     }
   }
 
-  .promo-description {
+  .promo__description {
+    width: 540px;
     padding-top: 2px;
     padding-left: 50px;
   }
 
-  .promo-description__title {
+  .promo__description-title {
     margin-top: 84px;
   }
 
-  .promo-description__text {
+  .promo__description-text {
     margin-top: 40px;
   }
 
@@ -170,7 +174,8 @@
   }
 
   .promo__image {
-    transform: translate(418px, -370px);
+    transform: translate(0, -370px);
+    margin-left: 418px;
   }
 
   .promo__link {

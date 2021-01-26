@@ -1,45 +1,50 @@
-.contacts-description {
+.contacts__description {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.contacts-description__title {
+.contacts__description-title {
   width: 138px;
-  margin: 30px 0;
+  margin: 28px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 21px;
   text-transform: uppercase;
   color: @special-black;
 }
 
-.contacts-description__address {
+.contacts__description-address {
   width: 138px;
   margin-top: 28px;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial", "Verdana", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: @dark-grey;
 }
 
-.contacts-description__map {
+.contacts__maps {
   padding: 0;
-  margin: 0 auto;
+  margin-top: -4px;
+  width: 320px;
+  height: 362px;
+  background-color: @light-grey;
+  background-image: url("../img/location-mobile.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 .contacts__map {
   width: 100vw;
-  margin: 0 auto;
 }
 
-.main-form .contacts {
-  background-color: @light-grey;
-}
-
-.main-catalog .contacts {
+.contacts--form {
   background-color: @light-grey;
 }
 
@@ -48,55 +53,64 @@
     background-color: @light-grey;
   }
 
-  .main .contacts {
+  .contacts--main {
     background-color: @white;
   }
 
-  .main-form .contacts {
+  .contacts--form {
     margin-top: 75px;
   }
 
-  .contacts-description {
+  .contacts__description {
     margin: 0 43px 0 40px;
     padding-top: 64px;
     padding-bottom: 60px;
   }
 
-  .contacts-description__title {
+  .contacts__description-title {
     width: 170px;
     margin: 0;
     font-size: 20px;
     line-height: 26px;
   }
 
-  .contacts-description__address,
-  .contacts-description__span {
+  .contacts__description-address,
+  .contacts__description-span {
     padding: 0;
     width: 160px;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .contacts-description__address {
+  .contacts__description-address {
     margin: 0;
     text-align: right;
   }
 
-  .contacts-description__span {
+  .contacts__description-span {
     display: block;
     margin-top: 20px;
   }
 
+  .contacts__maps {
+    padding: 0;
+    margin-top: -3px;
+    width: 100vw;
+    height: 400px;
+    background-color: @light-grey;
+    background-image: url("../img/location-tablet.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.png");
+      background-size: 767px auto;
+    }
+  }
 
   .contacts__map {
     width: 100vw;
     height: 400px;
-    margin: 0 auto;
     transform: translateX(0);
-  }
-
-  .contacts__form {
-    background-color: @light-grey;
   }
 }
 
@@ -106,23 +120,24 @@
     margin-top: -193px;
   }
 
-  .main .contacts {
+  .contacts--main {
+    margin-top: 3px;
     transform: translateY(0);
   }
 
-  .main-form .contacts {
-    margin-top: 280px;
+  .contacts--form {
+    margin-top: 275px;
   }
 
-  .main-catalog .contacts {
+  .contacts--catalog {
     margin-top: 281px;
   }
 
-  .contacts-description {
+  .contacts__description {
     z-index: 1;
     position: absolute;
     content: "";
-    top: 90px;
+    top: 94px;
     left: -39px;
     width: 570px;
     height: 200px;
@@ -130,17 +145,31 @@
     background-color: @white;
   }
 
-  .contacts-description__title {
+  .contacts__description-title {
     margin-left: 74px;
   }
 
-  .contacts-description__address {
+  .contacts__description-address {
     text-align: left;
     margin-right: 86px;
   }
 
-  .contacts-description__span {
+  .contacts__description-span {
     margin-top: 19px;
+  }
+
+  .contacts__maps {
+    padding: 0;
+    width: 1440px;
+    height: 400px;
+    background-color: @light-grey;
+    background-image: url("../img/location-desktop.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.png");
+      background-size: 1440px auto;
+    }
   }
 
   .contacts__images {
