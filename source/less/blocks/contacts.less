@@ -1,3 +1,7 @@
+.contacts {
+  margin: 0;
+}
+
 .contacts__description {
   display: flex;
   flex-wrap: wrap;
@@ -26,13 +30,15 @@
 }
 
 .contacts__maps {
+  width: 100vw;
+  height: 362px;
+  margin: 0;
   padding: 0;
   margin-top: -4px;
-  width: 320px;
-  height: 362px;
   background-color: @light-grey;
   background-image: url("../img/location-mobile.png");
   background-repeat: no-repeat;
+  overflow: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/location-mobile@2x.png");
@@ -42,6 +48,7 @@
 
 .contacts__map {
   width: 100vw;
+  overflow: hidden;
 }
 
 .contacts--form {
@@ -50,6 +57,8 @@
 
 @media (min-width: @tablet-width) {
   .contacts {
+    width: 768px;
+    margin: 0;
     background-color: @light-grey;
   }
 
@@ -93,10 +102,10 @@
   }
 
   .contacts__maps {
+    height: 400px;
+    margin: 0;
     padding: 0;
     margin-top: -3px;
-    width: 100vw;
-    height: 400px;
     background-color: @light-grey;
     background-image: url("../img/location-tablet.png");
     background-repeat: no-repeat;
@@ -108,13 +117,15 @@
   }
 
   .contacts__map {
-    width: 100vw;
     height: 400px;
-    transform: translateX(0);
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    width: 1440px;
+  }
+
   .contacts__wrapper {
     position: relative;
     margin-top: -193px;
@@ -122,7 +133,6 @@
 
   .contacts--main {
     margin-top: 3px;
-    transform: translateY(0);
   }
 
   .contacts--form {
@@ -138,7 +148,7 @@
     position: absolute;
     content: "";
     top: 94px;
-    left: -39px;
+    left: 72px;
     width: 570px;
     height: 200px;
     align-items: center;
@@ -159,9 +169,9 @@
   }
 
   .contacts__maps {
-    padding: 0;
-    width: 1440px;
     height: 400px;
+    padding: 0;
+    margin: 0 auto;
     background-color: @light-grey;
     background-image: url("../img/location-desktop.png");
     background-repeat: no-repeat;
@@ -170,13 +180,5 @@
       background-image: url("../img/location-desktop@2x.png");
       background-size: 1440px auto;
     }
-  }
-
-  .contacts__images {
-    width: 100%;
-  }
-
-  .contacts__form {
-    background-color: @white;
   }
 }

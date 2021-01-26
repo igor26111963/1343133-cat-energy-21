@@ -273,6 +273,7 @@
 
   .slider__button-before,
   .slider__button-after {
+    padding: 0;
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted @black;
@@ -290,10 +291,10 @@
 @media (min-width: @desktop-width) {
   .slider__wrapper {
     padding-top: 0;
-    transform: translateY(-167px);
   }
 
   .slider__inner {
+    margin-top: -167px;
     flex-direction: column;
   }
 
@@ -336,7 +337,8 @@
   }
 
   .slider__container {
-    margin-bottom: 95px;
+    margin-top: -166px;
+    margin-bottom: 258px;
     z-index: 1;
     position: relative;
 
@@ -345,8 +347,8 @@
       position: absolute;
       content: "";
       top: 166px;
-      right: -110px;
-      width: 395px;
+      right: -107px;
+      width: 392px;
       height: 462px;
       background-color: @special-grey;
       background-position: top right;
@@ -361,7 +363,7 @@
 
   .slider__buttons {
     width: 570px;
-    margin: -23px 0 0 213px;
+    margin: -23px 0 0 210px;
     padding: 0;
   }
 
